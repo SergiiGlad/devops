@@ -1,14 +1,14 @@
 # Network configuration
 
-Configuration file named ifcfg-interface in the 
-vi /etc/sysconfig/network-scripts/ifcfg-lo
+---|---
+vi /etc/sysconfig/network-scripts/ifcfg-lo | Configuration file named ifcfg-interface
 
-It allows the system to look up (resolve) the IP address of a host given its name, or the name given the IP address. 
-vi /etc/hosts
+vi /etc/hosts | It allows the system to look up (resolve) the IP address of a host given its name, or the name given the IP address. 
 
-The /etc/nsswitch.conf file configures how the system uses various databases and name resolution mechanisms. 
-vi /etc/nsswitch.conf
+vi /etc/nsswitch.conf | The /etc/nsswitch.conf file configures how the system uses various databases and name resolution mechanisms. 
 
-The /etc/resolv.conf file defines how the system uses DNS to resolve host names and IP addresses. 
-vi /etc/resolv.conf
+vi /etc/resolv.conf | The /etc/resolv.conf file defines how the system uses DNS to resolve host names and IP addresses. 
+
+vi /etc/sysconfig/network  | The /etc/sysconfig/network file specifies additional information that is valid to all network interfaces on the system. 
+
 
