@@ -27,6 +27,14 @@ For more information see `/usr/share/doc/iputils-*/README.bonding`.
 Create a JSON-format definition file for the team and its component ports. For sample configurations, see the files under /usr/share/doc/teamd-*/example_configs/. 
 ##### teamd -g -f /root/team_config/team0.conf -d
 
+### Configuring VLANs
+*To obtain information about the configured VLAN interfaces, view the files in the /proc/net/vlan directory. *
+
+### Network Routing
+##### # ip route show
+##### # netstat -rn 
+
+
 
 
 
