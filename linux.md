@@ -31,8 +31,8 @@ Create a JSON-format definition file for the team and its component ports. For s
 *To obtain information about the configured VLAN interfaces, view the files in the /proc/net/vlan directory. *
 
 ### Network Routing
-##### # ip route show
-##### # netstat -rn 
+###### # ip route show
+###### # netstat -rn 
 
 
 
