@@ -1,6 +1,7 @@
 # Network configuration
 
-| --- | --- |
+File | Desc
+ --- | --- 
 | vi /etc/sysconfig/network-scripts/ifcfg-lo | Configuration file named ifcfg-interface |
 
 | vi /etc/hosts | It allows the system to look up (resolve) the IP address of a host given its name, or the name given the IP address. | 
@@ -16,5 +17,11 @@
 | col 3 is      | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 
 
