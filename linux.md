@@ -51,8 +51,30 @@ Creating and Using a Swap File https://docs.oracle.com/cd/E52668_01/E54669/html/
 
 ### File System Administration
 
-To display the type of a file system, use the blkid command:
-###### # blkid /dev/sdb1
+T
+###### # blkid /dev/sdb1 ------ display the type of a file system, use the blkid command
+###### # cat /proc/mounts ------ to display information about mounted file systems
+###### # df -h ------ displays information about home much space remains on mounted file 
+
+mount /dev/sdd1 as /test with read-only access and only root permitted to mount or unmount the file system
+###### # mount -o nouser,ro /dev/sdd1 /test 
+
+Mount an ISO image file on /mount/cdrom with read-only access by using the loop device:
+###### # mount -o ro,loop ./OracleLinux-R6-U1-Server-x86_64-dvd.iso /media/cdrom
+
+Remount the /test file system with both read and write access, but do not permit the execution of any binary files that are located in the file system:
+###### # mount -o remount,rw,noexec /test
+
+A loop device allows you to access a file as a block device. For example, to mount a file that contains a DVD ISO image on the directory mount point /ISO:
+###### # mount -t iso9660 -o ro,loop /var/ISO_files/V33411-01.iso /ISO
+
+### Creating a File System on a File
+
+###### # dd if=/dev/zero of=/fsfile bs=1024 count=1000000 
+###### # mkfs.ext4 -F /fsfile 
+###### # mount -o loop /fsfile /mnt
+
+
 
 
 
