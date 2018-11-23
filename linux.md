@@ -34,6 +34,14 @@ Create a JSON-format definition file for the team and its component ports. For s
 ###### # ip route show
 ###### # netstat -rn 
 
+### Managing Partition Tables Using fdisk
+
+##### # swapoff ----- command to disable the swap partition. 
+##### # cfdisk ----- utility, which is a text-based, graphical version of fdisk. 
+##### # fdisk -cu /dev/sdc
+##### # parted /dev/sda ----- is more advanced than fdisk as it supports more disk label types, including GPT disks, and it implements a larger set of commands. 
+##### # kpartx -l system.img ----- mapping partition tables to device
+
 
 
 
