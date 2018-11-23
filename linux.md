@@ -74,6 +74,7 @@ A loop device allows you to access a file as a block device. For example, to mou
 ###### # mkfs.ext4 -F /fsfile 
 ###### # mount -o loop /fsfile /mnt
 
+cmd | desc
 --- | ---
 ###### # umount filesystem |  Unmount the file system:
 ###### # fsck [-y] filesystem | Use the fsck command to check the file system:
