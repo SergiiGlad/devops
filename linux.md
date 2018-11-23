@@ -33,6 +33,7 @@ Create a JSON-format definition file for the team and its component ports. For s
 ### Network Routing
 ###### # ip route show
 ###### # netstat -rn 
+###### # lsof -i :22
 
 ### Managing Partition Tables Using fdisk
 
@@ -74,10 +75,25 @@ A loop device allows you to access a file as a block device. For example, to mou
 ###### # mkfs.ext4 -F /fsfile 
 ###### # mount -o loop /fsfile /mnt
 
-cmd | desc
---- | ---
-umount filesystem |  Unmount the file system:
-fsck [-y] filesystem | Use the fsck command to check the file system:
+###### # umount filesystem ------ Unmount the file system:
+###### # fsck [-y] filesystem ------ Use the fsck command to check the file system
+###### # ls /sbin/mkfs.* ------ see which file system os support
+###### # mount -t cifs //server_name/share_name mountpoint -o sec=krb5
+
+### Shutdown and reboot
+###### # systemctl reboot
+###### # init 5
+###### # reboot
+###### # shutdowm -r
+
+### About Authentication
+
+/etc/passwd and /etc/shadow files
+on remote systems using 
+..* Identity Policy Audit (IPA), 
+..* the Lightweight Directory Access Protocol (LDAP), 
+..* the Network Information Service (NIS), 
+..* Winbind.
 
 
 
