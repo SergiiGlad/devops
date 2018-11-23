@@ -96,6 +96,30 @@ A loop device allows you to access a file as a block device. For example, to mou
   * the Lightweight Directory Access Protocol (LDAP), 
   * the Network Information Service (NIS), 
   * Winbind.
+  
+  
+  
+ ### Local Account Configuration
+ 
+The default settings are stored in the /etc/default/useradd file. 
+###### # useradd -D ------ To display the default settings for an account 
+###### echo "username:password" | chpasswd ------ change the password non-interactively (for example, from a script)
+###### # passwd -l username ------ To lock a user's account
+###### # passwd -u username ------ To unlock the account
+
+### About umask and the setgid and Restricted Deletion Bits
+
+###### # chgrp groupname directory
+###### # chmod g+s directory ------ set the setgid bit on the directory
+###### # chmod a+t directory ------ To set the restricted deletion bit on a directory
+###### # usermod -aG groupname username ------ to add a user to a supplementary group (other than his or her login group)
+###### # groups root ------ to display the groups to which a user belongs
+###### # userdel username ------ To delete a user's account
+###### # groupadd -g 1000 devgrp ------ greate a group
+###### # groupmod [options] username ------ To modify a group
+###### # groupdel username ------ To delete a user's account
+###### # usermod -f 30 username ------ how long a user's account can be inactive before it is locked
+###### # visudo ------ command to modify the /etc/sudoers file.
 
 
 
