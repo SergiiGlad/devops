@@ -36,11 +36,18 @@ Create a JSON-format definition file for the team and its component ports. For s
 
 ### Managing Partition Tables Using fdisk
 
-##### # swapoff ----- command to disable the swap partition. 
-##### # cfdisk ----- utility, which is a text-based, graphical version of fdisk. 
-##### # fdisk -cu /dev/sdc
-##### # parted /dev/sda ----- is more advanced than fdisk as it supports more disk label types, including GPT disks, and it implements a larger set of commands. 
-##### # kpartx -l system.img ----- mapping partition tables to device
+###### # swapoff ----- command to disable the swap partition. 
+###### # cfdisk ----- utility, which is a text-based, graphical version of fdisk. 
+###### # fdisk -cu /dev/sdc
+###### # parted /dev/sda ----- is more advanced than fdisk as it supports more disk label types, including GPT disks, and it implements a larger set of commands. 
+###### # kpartx -l system.img ----- mapping partition tables to device
+
+### To view a system's usage of swap space
+Creating and Using a Swap File https://docs.oracle.com/cd/E52668_01/E54669/html/ol7-s6-storage.html
+
+###### # cat /proc/swaps
+###### # grep Swap /proc/meminfo
+###### # free | grep Swap
 
 
 
