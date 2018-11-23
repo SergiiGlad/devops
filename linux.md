@@ -88,8 +88,10 @@ A loop device allows you to access a file as a block device. For example, to mou
 
 ### About Authentication
 
-/etc/passwd and /etc/shadow files
-on remote systems using 
+1. Local files 
+..* /etc/passwd 
+..* /etc/shadow files
+2. on remote systems using 
 ..* Identity Policy Audit (IPA), 
 ..* the Lightweight Directory Access Protocol (LDAP), 
 ..* the Network Information Service (NIS), 
