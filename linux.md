@@ -49,6 +49,11 @@ Creating and Using a Swap File https://docs.oracle.com/cd/E52668_01/E54669/html/
 ###### # grep Swap /proc/meminfo
 ###### # free | grep Swap
 
+### File System Administration
+
+To display the type of a file system, use the blkid command:
+###### # blkid /dev/sdb1
+
 
 
 
