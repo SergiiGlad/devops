@@ -1,0 +1,68 @@
+Linux Package Interview Questions | Linux YUM Interview Questions
+
+1) What does ‘ivh’ represents in rpm -ivh <PackageName> command?
+
+ANS: i – install
+v – verbose mode
+h – hash mode where it would print ## characters as the installation progresses
+
+2) What is the difference between rpm -F <PackageName> and rpm -U <PackageName>?
+
+ANS: rpm -F = Basically freshens a package which in turn upgrades an existing package, otherwise doesn’t install it if an earlier version not found.
+rpm -U = Upgrades an existing package if exists otherwise install it.
+
+3) How to find to which package the “ls” commands belongs to (to find out package responsible for this command)?
+
+ANS : #rpm -qf /bin/ls {this would tell about the package to which this command (binary file) belongs to if installed by that package}
+
+4) How to find out the configuration files installed by a package (take into consideration of the “coreutils” package)?
+
+ANS : # rpm -qc coreutils
+
+To list out only the document files installed by coreutils package:-
+# rpm -qd coreutils
+
+To list out all the files installed by this package:-
+#rpm -ql coreutils
+OR
+#rpm -q – -filesbypkg coreutils
+
+To list out dependencies :-
+#rpm -qR coreutils
+
+To list out packages which require this package:-
+#rpm -q –whatrequires coreutils
+
+To find out more information of this package:-
+#rpm -qi coreutils
+
+To find out any scripts executed by this package:-
+#rpm -q –scripts coreutils
+
+Similarly, to find details of package which is not yet installed:
+
+List Files In Package:
+#rpm -qpl <PathOfPackageNotYetInstalled>
+
+{The list would show up files which would get added to system after installing package}
+
+List Only Config Files:
+#rpm -qpc <PathOfPackageNotYetInstalled>
+
+List Only Document Files:
+#rpm -qpd <PathOfPackageNotYetInstalled>
+
+List Out Dependancies For This Package:
+#rpm -qpR <PathOfPackageNotYetInstalled>
+
+List Details For This Package:
+#rpm -qpi <PathOfPackageNotYetInstalled>
+
+5) How do you find out all the packages installed on a RHEL system(server)?
+
+ANS : – /root/install.log > this would only lists packages installed during deployment of the system. Packages installed later would not be listed here.
+– Otherwise, run the command #rpm -qa > this would query rpm database and prints out names respectively.
+
+– In RHEL5.x we can check the file : /var/log/rpmpkgs to find out all packages on the system. However, this file is deprecated in RHEL6.
+
+– Note: In Red Hat Enterprise Linux 6, the daily cron file to create /var/log/rpmpkgs is provided by the rpm-cron package, available in the optional repository, not the main ‘rpm’ package. So, if you do not install the package, /var/log/rpmpkgs is not available on Red Hat Enterprise Linux 6. (Ref – https://access.redhat.com/solutions/23743)
