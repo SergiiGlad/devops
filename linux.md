@@ -90,10 +90,15 @@ A loop device allows you to access a file as a block device. For example, to mou
 ###### # mount -t cifs //server_name/share_name mountpoint -o sec=krb5
 
 ### Shutdown and reboot
+# Make the user sudo with appropriate permissions on the commands required.
+– Edit the file /etc/sudoers using the command “visudo”.
+
 ###### # systemctl reboot
 ###### # init 5
 ###### # reboot
 ###### # shutdowm -r
+###### # poweroff
+
 
 ### About Authentication
 
@@ -133,8 +138,17 @@ The default settings are stored in the /etc/default/useradd file.
 
 ###### # rpm -qf /bin/ls {this would tell about the package to which this command (binary file) belongs to if installed by that package}
 
+###### # find / -type f -perm -4000 2>/dev/null | xargs ls -l { to list all the files with SUID (Set User ID) bit set }
 
-###### #rpm -qR coreutils { To list out dependencies }
+###### # find / -type f -perm /7000 2>/dev/null | xargs ls -l { to list all the files/folders with SUID/SGID/Sticky Bit (Set Group ID) bit set }
+
+###### #ethtool -s eth0 speed 100 autoneg off duplex full {changing the speed on the fly}
+
+#### How do you check the network routing table using commands?
+
+###### # route -n
+###### # netstat -nr
+###### # ip route
 
 
 
