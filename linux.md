@@ -20,7 +20,16 @@ vi /etc/sysconfig/network  | The /etc/sysconfig/network file specifies additiona
 ##### ip link set em2 up
 
 ### Network Interface Bonding
-balance-rr ( round-robin fashion ), balance-xor, balance-tlb, balance-alb
+#### Below are list of modes used in Network Bonding :
+  * balance-rr ( round-robin fashion ), 
+  * active-backup
+  * 802.3ad 
+  * broadcast 
+  * balance-xor (exclusive-or), 
+  * balance-tlb ( Transmit Load Balancing), 
+  * balance-alb (Active Load Balancing)
+
+###### # cat /proc/net/bonding/bond0  
 For more information see `/usr/share/doc/iputils-*/README.bonding`. 
 
 ### Network Interface Teaming
@@ -120,6 +129,12 @@ The default settings are stored in the /etc/default/useradd file.
 ###### # groupdel username ------ To delete a user's account
 ###### # usermod -f 30 username ------ how long a user's account can be inactive before it is locked
 ###### # visudo ------ command to modify the /etc/sudoers file.
+
+
+###### # rpm -qf /bin/ls {this would tell about the package to which this command (binary file) belongs to if installed by that package}
+
+
+###### #rpm -qR coreutils { To list out dependencies }
 
 
 
