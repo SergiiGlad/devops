@@ -154,13 +154,15 @@ The default settings are stored in the /etc/default/useradd file.
 
 ##### SETUID
 The binary file with the **setuid permission** is "run as" the owner of the file
-###### # chmod u+s file { To add the setuid permission symbolically }
-###### # chmod 4775 file { To add the setuid permission numerically, add 4000 }
+###### # chmod u+s /bin/cat or  chmod 4775 file  { To add the setuid permission  }
+After that regular user to run **cat** and open file with root owner because **cat** to run with root permission
+And goor example how regular user to run **passwd** which change root owner file /etc/shadow
 ###### chmod u-s file or chmod 0775 file { to remove }
 
-#### SETGID
-The setgid permission on a File is similar to setuid
--rwxr-**s**r-x. 1 root **tty** 10996 Jul 19  2011 /usr/bin/wall
+##### SETGID
+
+The setgid permission on a File is similar to setuid that provides them additional (temporary) group access. 
+-rwxr-**s**r-x. 1 root **tty** 10996 Jul 19  2011 /usr/bin/wall { Regualr user run **wall** which add permission gorup **tty**}
 crw--w----. 1 root tty  4, 0 Mar 29  2013 /dev/tty0
 
 The setgid Permission on a Directory
@@ -168,10 +170,24 @@ Creates a new group called team.
 ###### # sudo chmod g+s /home/team  { setgid causes files created in the directory to automatically be owned by the group that owns the directory. To add the setgid permission numerically, add 2000  }
 
 #### Sticky Bit Permission
-The sticky bit permission is used to prevent other users from deleting files that they do not own in a shared directory. 
-###### # chmod o+t <directory> { To set the sticky bit permission numerically, add 1000 }
+The sticky bit permission is used to prevent other users from deleting or unlink a files that they do not own in a shared directory. 
+###### # chmod +t /tmp { To set the sticky bit permission numerically on temporary folder , add 1000 }
+Modern Linux kernels ignore the sticky bit if it is set for files.
 
+#### Immutable files
+If this is set, even root cannot delete the file until the attribute is unset.
+###### # lsattr { command to see whether the immutable flag  }
+###### chattr +i file { add immutable attribute }
 
+#### The file creation mask
+Directories usually default to 0777
+Files usually default to 0666
+
+###### # umask -S { Use the -S option to display the umask symbolically }
+The umask values specifies which of these bits should be removed 
+for files 0666 - 0002 = file create with 0664 , r-w r-w r { for user with own privat group }
+for directory 0777 - 0002 = 0775
+root has umask=0022 (created files without permission write for group)
 
 
 
