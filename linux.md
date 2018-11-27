@@ -150,6 +150,30 @@ The default settings are stored in the /etc/default/useradd file.
 ###### # netstat -nr
 ###### # ip route
 
+#### Special Permissions 
+
+##### SETUID
+The binary file with the **setuid permission** is "run as" the owner of the file
+###### # chmod u+s file { To add the setuid permission symbolically }
+###### # chmod 4775 file { To add the setuid permission numerically, add 4000 }
+###### chmod u-s file or chmod 0775 file { to remove }
+
+#### SETGID
+The setgid permission on a File is similar to setuid
+-rwxr-**s**r-x. 1 root **tty** 10996 Jul 19  2011 /usr/bin/wall
+crw--w----. 1 root tty  4, 0 Mar 29  2013 /dev/tty0
+
+The setgid Permission on a Directory
+Creates a new group called team.
+###### # sudo chmod g+s /home/team  { setgid causes files created in the directory to automatically be owned by the group that owns the directory. To add the setgid permission numerically, add 2000  }
+
+#### Sticky Bit Permission
+The sticky bit permission is used to prevent other users from deleting files that they do not own in a shared directory. 
+###### # chmod o+t <directory> { To set the sticky bit permission numerically, add 1000 }
+
+
+
+
 
 
 
