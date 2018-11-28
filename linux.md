@@ -189,6 +189,31 @@ for files 0666 - 0002 = file create with 0664 , r-w r-w r { for user with own pr
 for directory 0777 - 0002 = 0775
 root has umask=0022 (created files without permission write for group)
 
+### Filesystem Hierarchy Standard
+
+##### FHS categories
+ 	| Shareable |	Unshareable
+ --- | --- | ---
+Static 	| /usr /opt 	| /etc /boot
+Variable 	| /var/mail /var/spool/news 	| /var/run /var/lock
+
+###### # find /usr ‑type f | wc ‑l  { contain files in /usr}
+###### # export PATH=~/test‑hello:$PATH { add directory to PATH }
+###### # which ll { which command will be executed  }
+###### # which -a awk  { multiple occurrences  }
+###### # whereis awk  {more information than just the location of a program , ** whereis command can also search for source files ** }
+
+#### The find command
+cmd | desc
+--- | ---
+find /tmp ‑user ian | finding files by user and group
+find ‑L /usr ‑maxdepth 2 ‑type d ! ‑group ian | Finding directories not owned by ian
+find . ‑maxdepth 1 ! ‑perm  ‑o=r { Finding files by permission }
+find . ‑maxdepth 1 ‑type f ‑perm ‑uga=x
+
+
+
+
 
 
 
