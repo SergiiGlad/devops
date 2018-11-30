@@ -209,7 +209,8 @@ cmd | desc
 find /tmp ‑user ian | finding files by user and group
 find ‑L /usr ‑maxdepth 2 ‑type d ! ‑group ian | Finding directories not owned by ian
 find . ‑maxdepth 1 ! ‑perm  ‑o=r { Finding files by permission }
-find . ‑maxdepth 1 ‑type f ‑perm ‑uga=x
+find . ‑maxdepth 1 ‑type f ‑perm ‑uga=x { Finding files by permission }
+
 
 
 
