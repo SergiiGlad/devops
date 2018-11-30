@@ -2,7 +2,7 @@
 ### Filesystem Hierarchy Standard
 
 ##### FHS categories
-  | Shareable |	Unshareable
+  Name | Shareable |	Unshareable
  --- | --- | ---
 Static 	| /usr /opt 	| /etc /boot
 Variable 	| /var/mail /var/spool/news | /var/run /var/lock
