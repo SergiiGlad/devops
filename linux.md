@@ -189,13 +189,6 @@ for files 0666 - 0002 = file create with 0664 , r-w r-w r { for user with own pr
 for directory 0777 - 0002 = 0775
 root has umask=0022 (created files without permission write for group)
 
-### Filesystem Hierarchy Standard
-
-##### FHS categories
- 	| Shareable |	Unshareable
- --- | --- | ---
-Static 	| /usr /opt 	| /etc /boot
-Variable 	| /var/mail /var/spool/news 	| /var/run /var/lock
 
 ###### # find /usr ‑type f | wc ‑l  { contain files in /usr}
 ###### # export PATH=~/test‑hello:$PATH { add directory to PATH }
