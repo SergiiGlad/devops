@@ -1,5 +1,6 @@
 
-### Filesystem Hierarchy Standard link [ Filesystem Hierarchy Standard ](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html#VARRUNRUNTIMEVARIABLEDATA "FHS" )
+
+### l[ Filesystem Hierarchy Standard ](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html#VARRUNRUNTIMEVARIABLEDATA "FHS" )
 
 
 ##### FHS categories
@@ -7,9 +8,6 @@
  --- | --- | ---
 Static 	| /usr /opt 	| /etc /boot
 Variable 	| /var/mail /var/spool/news | /var/run /var/lock
-
-
-
 
 
 Directory 	| Purpose
