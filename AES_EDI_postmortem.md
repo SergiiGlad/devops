@@ -1,4 +1,4 @@
-# PostMortem/Root Cause Analysis of the AES EDI jira (AESEDI-53447 #465)
+# PostMortem/Root Cause Analysis of the AES EDI jira (AESEDI-53447)
 
 ## Date
 2018-12-08
