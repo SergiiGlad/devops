@@ -214,6 +214,12 @@ The **procfs** filesystem provides insight into many of the kernel data structur
 
 **udev** is responsible for the dynamic device management needed for hot plugging devices. Information about configured and active devices is contained in the **/dev** virtual filesystem. 
 
+###### $ lsmod The lsmod command formats the information from /proc/modules to give you a current status of the modules in your Linux system. 
+
+#### to burn .iso to USB drive
+
+###### #dd bs=4M if=ubuntu-12.04.2-server-i386.iso of=/dev/sdb
+###### #qemu-system-i386 -hda /dev/sdb
 
 
 
