@@ -1,4 +1,4 @@
-# Network configuration
+## Network configuration
 
 https://docs.oracle.com/cd/E52668_01/E54669/html/ol7-netconf.html
 
@@ -203,6 +203,16 @@ find /tmp ‑user ian | finding files by user and group
 find ‑L /usr ‑maxdepth 2 ‑type d ! ‑group ian | Finding directories not owned by ian
 find . ‑maxdepth 1 ! ‑perm  ‑o=r { Finding files by permission }
 find . ‑maxdepth 1 ‑type f ‑perm ‑uga=x { Finding files by permission }
+
+## Configure hardware settings
+
+##### Basic Input-Output Services (BIOS) or with the newer Universal Extensible Firmware Interface (UEFI).
+
+**Sysfs**  is a virtual filesystem that the Linux kernel uses to export information about kernel objects to processes running in user space. As a virtual filesystem, sysfs is an in-memory filesystem that is mounted at **/sys**. 
+
+The **procfs** filesystem provides insight into many of the kernel data structures and even allows a few to be changed on the fly. procfs is usually mounted at **/proc**. 
+
+**udev** is responsible for the dynamic device management needed for hot plugging devices. Information about configured and active devices is contained in the **/dev** virtual filesystem. 
 
 
 
