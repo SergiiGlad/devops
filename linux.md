@@ -216,8 +216,9 @@ The **procfs** filesystem provides insight into many of the kernel data structur
 
 ###### $ lsmod The lsmod command formats the information from /proc/modules to give you a current status of the modules in your Linux system. 
 
-#### to burn .iso to USB drive
+#### to burn .iso to USB drive using a direct write method
 
+**Unmount all mounted partition from that device.**
 ###### #dd bs=4M if=ubuntu-12.04.2-server-i386.iso of=/dev/sdb
 ###### #qemu-system-i386 -hda /dev/sdb
 
