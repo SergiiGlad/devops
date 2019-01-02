@@ -93,11 +93,26 @@ A loop device allows you to access a file as a block device. For example, to mou
 # Make the user sudo with appropriate permissions on the commands required.
 – Edit the file /etc/sudoers using the command “visudo”.
 
+#### Run Levels
+***The run level determines the mode of operation of the server. the /etc/inittab contains an explanation of the run levels***
+###### 0 - halt (do not set initdefault to this)
+###### 1 - Single user mod
+###### 2 - Multi user, whithout NFS
+###### 3 - Full multiuser mode
+###### 4 - unused
+###### 5 - Graphical mode ( X11 mode )
+###### 6 - reboot ( do not set initdefault to this)
+
+#### Reboot
 ###### # systemctl reboot
-###### # init 5
+###### # init 6
 ###### # reboot
-###### # shutdowm -r
+###### # shutdown -r now
+
+#### Shutdown
+###### # shutdown -h now
 ###### # poweroff
+###### # init 0
 
 
 ### About Authentication
