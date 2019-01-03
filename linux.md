@@ -93,7 +93,7 @@ A loop device allows you to access a file as a block device. For example, to mou
 # Make the user sudo with appropriate permissions on the commands required.
 – Edit the file /etc/sudoers using the command “visudo”.
 
-#### Run Levels
+#### System V Run Levels
 ***The run level determines the mode of operation of the server. the /etc/inittab contains an explanation of the run levels***
 ###### 0 - halt (do not set initdefault to this)
 ###### 1 - Single user mod
@@ -110,7 +110,9 @@ A loop device allows you to access a file as a block device. For example, to mou
 ###### # shutdown -r now
 
 #### Shutdown
+$ echo ‑e "We are experiencing system problemsOutage rescheduled to 02:30" | wall
 ###### # shutdown -h now
+###### # halthi
 ###### # poweroff
 ###### # init 0
 
