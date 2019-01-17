@@ -10,3 +10,4 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8-beta/ht
 ### Security Enhanced Linux (SELinux) is an additional layer of system security that determines which process can access which files, directories, and ports. 
 
 ### A firewall is a network security system that monitors and controls the incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted, secure internal network and another outside network. 
+### A firewall is a way to protect machines from any unwanted traffic from outside. It enables users to control incoming network traffic on host machines by defining a set of firewall rules. These rules are used to sort the incoming traffic and either block it or allow through. 
