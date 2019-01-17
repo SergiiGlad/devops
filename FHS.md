@@ -1,7 +1,8 @@
 
 
-### l[ Filesystem Hierarchy Standard ](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html#VARRUNRUNTIMEVARIABLEDATA "FHS" )
+### [ Filesystem Hierarchy Standard ](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html#VARRUNRUNTIMEVARIABLEDATA "FHS" )
 
+Red Hat recommends creating separate partitions for the /boot, /, /home/tmp, and /var/tmp/ directories. The reasons for each are different, and we will address each partition. 
 
 ##### FHS categories
   Name | Shareable |	Unshareable
