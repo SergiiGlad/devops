@@ -1,7 +1,7 @@
 #### Linux **top** command
 
 Top:
-![alt text](https://github.com/SergeyGlad/devops/top.png "Top")
+![alt text](https://github.com/SergiiGlad/devops/blob/master/top.png "Top")
 
 ###### $ top -v { version 3.3.10}
 
