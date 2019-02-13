@@ -1,18 +1,26 @@
-#### Linux *top* command
+#### Linux **top** command
 
-![alt text](https://github.com/sergeyglad/devops/top.png "Top")
+Top:
+![alt text](https://github.com/SergeyGlad/devops/top.png "Top")
 
 ###### $ top -v { version 3.3.10}
 
 ##### Memory usage
- * total 
- * free
- * used
+
+ * total - value total 
+ * free - free
+ * used - used
  * buff/cache - disk buffer
  * avail Mem - amount of memory that can be allocated to processes without causing more swapping
 
 
 ##### Tasks
+
+ * total - value is simply the total number of processes
+ * running - Runnable(R) state executing on the CPU
+ * sleeping - Interruptible (S) Uninterruptible sleep (D)
+ * stopped - Stopped (T) these processes have been stoped by a job control signal
+ * zombie - Zombie (Z) such terminated processes whose data structures are still around are called zombies 
 
 
 ##### CPU Usage
