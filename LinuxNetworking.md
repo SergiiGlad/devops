@@ -14,7 +14,9 @@ For permanent changes that persist across system restarts, add lines to the /etc
 
 ###### $  ncat -l --proxy-type http localhost 8080
 
-**#### NetworkManager **
+### Linux Network Manager
+
+###### # systemctl status network.service { start, restart, status }
 
 can configure network aliases, IP addresses, static routes, DNS information, and VPN connections, as well as many connection-specific parameters. 
 
@@ -27,13 +29,13 @@ can configure network aliases, IP addresses, static routes, DNS information, and
 | network connection icon | A graphical user interface tool provided by the GNOME Shell representing network connection states as reported by NetworkManager. The icon has multiple states that serve as visual indicators for the type of connection you are currently using. |
 
 if you edit an ifcfg file, NetworkManager is not automatically aware of the change
-~]# nmcli connection reload
+###### # nmcli connection reload
 
 Alternatively, to reload only one changed file, ifcfg-ifname:
-~]# nmcli con load /etc/sysconfig/network-scripts/ifcfg-ifname
+###### # nmcli con load /etc/sysconfig/network-scripts/ifcfg-ifname
 
 to restart the connection after changes are made, use:
-~]# nmcli con up connection-name
+###### # nmcli con up connection-name
 
 
 Additional resources
@@ -45,10 +47,8 @@ Additional resources
 
 #### nmcli
 
-###### $ nmcli device wifi
-###### $ nmcli connection
 ###### $ nmcli connection show --active
-###### $ nmcli connection up id bond0
+###### $ nmcli connection up id bond0 { up interface }
 ###### $ nmcli device disconnect id bond0 { preventing it from automatically started again }
 
 #### Creating a connection profile with an IPv4 address
@@ -64,13 +64,12 @@ Additional resources
 
 ###### $ nmcli radio { show enable radio interface }
 
-##### To Connection
+        To connection WiFi
 ###### $ nmcli connection show { list all connection }
 ###### $ nmcli connection up id SSID-Connection --ask { ask password }
-        To connection WIFI
-
-#### To WiFi
+        
+        To new WiFi AP
 ###### $ nmcli dev wifi { scan all WiFi AP}
-###### $ nmcli device wifi SSID-Name password wireless-password
-        To SSID connection
+###### $ nmcli device wifi SSID-Name --ask { wireless-password }
+        
 
