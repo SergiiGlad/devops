@@ -45,17 +45,32 @@ Additional resources
 
 #### nmcli
 
-~]$ nmcli device wifi
-~]$ nmcli connection
-~]$ nmcli connection show --active
-~]$ nmcli connection up id bond0
-~]$ nmcli device disconnect id bond0 { preventing it from automatically started again }
+###### $ nmcli device wifi
+###### $ nmcli connection
+###### $ nmcli connection show --active
+###### $ nmcli connection up id bond0
+###### $ nmcli device disconnect id bond0 { preventing it from automatically started again }
 
 #### Creating a connection profile with an IPv4 address
-~]$ nmcli c add type ethernet ifname eth0 con-name "My Connection" ip4 192.168.2.100/24 gw4 192.168.2.1
+###### $ nmcli c add type ethernet ifname eth0 con-name "My Connection" ip4 192.168.2.100/24 gw4 192.168.2.1
 
-~]$ nmcli con edit { connection editor } 
+###### $ nmcli con edit { connection editor } 
 
 #### Configuring a Static Ethernet Connection
-~]$ nmcli con mod test-lab ipv4.dns "8.8.8.8 8.8.4.4"
-~]$ nmcli con edit type ethernet con-name ens3
+###### $ nmcli con mod test-lab ipv4.dns "8.8.8.8 8.8.4.4"
+###### $ nmcli con edit type ethernet con-name ens3
+
+#### Connection to wifi
+
+###### $ nmcli radio { show enable radio interface }
+
+##### To Connection
+###### $ nmcli connection show { list all connection }
+###### $ nmcli connection up id SSID-Connection --ask { ask password }
+        To connection WIFI
+
+#### To WiFi
+###### $ nmcli dev wifi { scan all WiFi AP}
+###### $ nmcli device wifi SSID-Name password wireless-password
+        To SSID connection
+
