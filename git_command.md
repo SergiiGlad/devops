@@ -74,7 +74,7 @@ $ git config --global user.email your@email-address.com
 | Step 	| Action |	Git Commands |
 | --- | --- | --- |
 | 1 |	Clone the Remote Repository |	git clone <url> |
-| 2 |	Create and Checkout a Local Branch |	git checkout -b <new branch name> |
+| 2 |	Create and Checkout a Local Branch |	git checkout -b new branch name |
 | 3 |	Incrementally Commit Changes |	git add <new or modified file> git commit -m "Commit Message" |
 
 
