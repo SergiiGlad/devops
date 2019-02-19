@@ -6,7 +6,7 @@
 	1. Getting you a copy of the sample we are going to work with
 	2. Getting you started with a basic VCS workflow
 
-#### **"It's impossible to get anything out of Git other than the exact bits you put in."**####
+#### **"It's impossible to get anything out of Git other than the exact bits you put in."**
 **git-scm.com - Data Assurance**
 
 ## Basic git workflows
@@ -36,6 +36,7 @@ Run this on your workstation:
 	$ git fetch
 
 If you make any changes to a file under git's version control, git will know.
+	
 	$ git status
 
 	$ git diff
@@ -51,6 +52,7 @@ If you make any changes to a file under git's version control, git will know.
 **Need:** I created a branch to experiment with some changes, and now I just want to throw the whole thing out.
 
 **Solution:** Delete the branch.
+	
 	$ git branch --delete --force <branch name>
 
 **Note:** Always be careful when you see options like --hard or --force. These should be keywords that cause you to pause and think about what you are doing as you will lose some work when you run these commands. If that is your intention, proceed. If not, think twice (or three times) before running these commands.
