@@ -2,11 +2,8 @@
 ## Intro to version control systems
 
 ##### A number of Version Control Systems are available today (Git, Mercurial, Subversion, and others...). 
-##### For our purposes, which are:
-	1. Getting you a copy of the sample we are going to work with
-	2. Getting you started with a basic VCS workflow
 
-#### **"It's impossible to get anything out of Git other than the exact bits you put in."**
+### "It's impossible to get anything out of Git other than the exact bits you put in."
 **git-scm.com - Data Assurance**
 
 ## Basic git workflows
