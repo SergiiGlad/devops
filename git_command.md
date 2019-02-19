@@ -1,18 +1,21 @@
 
-#### Intro to version control systems
+## Intro to version control systems
 
-##### A number of Version Control Systems are available today (Git, Mercurial, Subversion, and others...). For our purposes, which are:
-
+##### A number of Version Control Systems are available today (Git, Mercurial, Subversion, and others...). 
+##### For our purposes, which are:
 	1. Getting you a copy of the sample we are going to work with
 	2. Getting you started with a basic VCS workflow
 
-"It's impossible to get anything out of Git other than the exact bits you put in."
-git-scm.com - Data Assurance
+#### **"It's impossible to get anything out of Git other than the exact bits you put in."**####
+**git-scm.com - Data Assurance**
 
-#### Basic git workflows
+## Basic git workflows
 
 ```
-Note: You should have already cloned the sample code to your computer. Please don't do it more than once. Having multiple copies of the code samples on your computer can cause confusion as to which one you are working with.
+Note: 
+You should have already cloned the sample code to your computer. 
+Please don't do it more than once. 
+Having multiple copies of the code samples on your computer can cause confusion as to which one you are working with.
 ```
 
 ###### $ git clone https://github.com/CiscoDevNet/dne-security-code
@@ -23,11 +26,13 @@ You can verify what branch you are working on, and the current status of your wo
 	$ git status
 
 Run this on your workstation:
+
 	$ git checkout -b mycode *{ Adding the -b option to the checkout command causes Git to create a new branch - and then switch to it.}*
 
 **Note: If you recently cloned your repo, there might not have been any updates to the remote for you to retrieve.**
 
 Run this on your workstation:
+
 	$ git fetch
 
 If you make any changes to a file under git's version control, git will know.
@@ -35,7 +40,7 @@ If you make any changes to a file under git's version control, git will know.
 
 	$ git diff
 
-##### Reverting changes
+## Reverting changes
 
 **Need:** I made changes to a file, and now I want to revert those changes and get the original (last committed version) of the file back.
 
@@ -57,7 +62,7 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email your@email-address.com
 ```
 
-#### Making a commit
+## Making a commit
 
 **Try this out by running the following commands on your workstation:**
 
@@ -69,6 +74,8 @@ $ git config --global user.email your@email-address.com
 
 | Step 	| Action |	Git Commands |
 | --- | --- | --- |
-1 |	Clone the Remote Repository |	git clone <url>
-2 |	Create and Checkout a Local Branch |	git checkout -b <new branch name>
-3 |	Incrementally Commit Changes |	git add <new or modified file> git commit -m "Commit Message"
+| 1 |	Clone the Remote Repository |	git clone <url> |
+| 2 |	Create and Checkout a Local Branch |	git checkout -b <new branch name> |
+| 3 |	Incrementally Commit Changes |	git add <new or modified file> git commit -m "Commit Message" |
+
+
