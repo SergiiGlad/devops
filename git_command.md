@@ -3,8 +3,18 @@
 
 ##### A number of Version Control Systems are available today (Git, Mercurial, Subversion, and others...). 
 
+Unlike version control systems like subversion, git is a distributed version control system. What this means is that git is really great for sharing code with many individuals, and still being able to keep your changes in-sync, properly versioned, with a complete replica of the commits and repo content. 
+
 ### "It's impossible to get anything out of Git other than the exact bits you put in."
 **git-scm.com - Data Assurance**
+
+## Getting started with git config
+
+###### $ git config --global user.name "Your Name Comes Here"
+###### $ git config --global user.email you@yourdomain.example.com
+###### $ git init { Initialized empty Git repository  }
+###### $ git status { Checking status of a repo }
+###### $ git remote add origin git@github.com:<your_username>/<your_repo>.git { add repo }
 
 ## Basic git workflows
 
@@ -95,5 +105,17 @@ Branching is pretty simple, you just execute the command git branch <branch name
 ###### $ git branch -d shakespeare { you can delete branch }
 
 ## How to stash work in progress
+
+Now you are working with feature branch, and want to do commit without new changes
+
+###### $ git stash { you will save changes }
+
+Now, checkout the master branch.
+
+Make the change, and commit your work.
+
+Next, checkout your feature branch, and execute git stash pop. This will take the changes you have stashed, add them back to your file, and delete the stash.
+	
+###### $ git stash pop { return to changes }
 
 
