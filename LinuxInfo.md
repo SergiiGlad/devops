@@ -6,9 +6,14 @@
 ###### $ find ~ { -print default , find all file from local directory }
 
 ###### $ find ~ -type d { only directory }
-	b - block device
-	f - file
-	l - symlink
+	
+| File Type | Description |
+| --- | --- |
+| b | Block special device file |
+| c | Character special device file |
+| d | Directory |
+| f | Regular file |
+| l | Symbolic link |
 
 ###### $ find ~ -type f -name "*.JPG" -size +1M { size more 1 Mbyte }
 
