@@ -20,6 +20,7 @@ Having multiple copies of the code samples on your computer can cause confusion 
 ###### $ git log *{ now have locally on your computer all of the files that have ever been committed to the repository }*
 
 You can verify what branch you are working on, and the current status of your working tree with the git status command:
+
 	$ git status
 
 Run this on your workstation:
