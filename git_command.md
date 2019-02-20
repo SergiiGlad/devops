@@ -78,4 +78,22 @@ $ git config --global user.email your@email-address.com
 | 2 |	Create and Checkout a Local Branch |	git checkout -b new branch name |
 | 3 |	Incrementally Commit Changes |	git add <new or modified file> git commit -m "Commit Message" |
 
+## Git branch
+
+Branching is pretty simple, you just execute the command git branch <branch name>!
+
+###### $ git branch shakespeare { create the branch named shakespeare from current }
+###### $ git branch { list all of the branches in your repo }
+###### $ git checkout shakespeare { switch to exist branch }
+###### $ git checkout -b new_my_branch { create and switch to new branch }
+
+## Navigating branches
+
+###### $ git checkout master {  switch to master }
+###### $ git merge shakespeare { merge shakespeare to master }
+
+###### $ git branch -d shakespeare { you can delete branch }
+
+## How to stash work in progress
+
 
