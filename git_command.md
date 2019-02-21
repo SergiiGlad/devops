@@ -118,4 +118,4 @@ Next, checkout your feature branch, and execute git stash pop. This will take th
 	
 ###### $ git stash pop { return to changes }
 
-
+[Usefull link ] (http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch01.html " Волшебство Git")
