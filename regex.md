@@ -1,5 +1,7 @@
 
 
+## TEXT PROCCESING
+
 grep - global regular expression print
 
 grep [options] regex [file...]
@@ -47,9 +49,34 @@ grep [options] regex [file...]
 [:upper:] | The uppercase characters.
 
 
+###### $ cat > foo.txt
+The quick brown fox jumped over the lazy dog 1 .
+###### $ cat -A foo.txt { cat with spec symbol like TAB ENTER EOL}
 
+###### $ ls -lt { list and sort by time }
+###### $ ls -l /usr/bin | sort -nr -k 5 | head  { list and sort by time }
+###### $ sort -t ':' -k 3n -k 4n /etc/passwd | head
+###### $ cut -d ':' -f 1,3 /etc/passwd { user name, uid }
+###### $ comm /ets/shadow /etc/shadow- { compare sorted files by lines }
 
+###### # diff /etc/shadow /etc/shadow- { compare by text }
+###### # diff -c /etc/shadow /etc/shadow- { context format }
+###### # diff -u /etc/shadow /etc/shadow- { universal compact format }
 
+##### Patching
+###### $ diff -Naur file1.txt file2.txt > patchfile.txt
+###### $ patch < patchfile.txt
+patching file file1.txt
+###### $ cat file1.txt
+
+###### $ echo "lower" | tr a-z A-Z { translate to LOWER }
+###### $ tr -d '\r' < файл_dos > файл_unix { dos2unix }
+###### $ echo "front" | sed 's/front/back/'
+###### $ sed -n '/SUSE/p' distros.txt { like grep SUSE distros.txt }
+###### $ sed -n '/SUSE/!p' distros.txt { !SUSE }
+###### $ sed -i 's/foo/boo/' foo.txt { -i replace input file}
+
+###### $ aspell -H check foo.txt { check spelling }
 
 
 
