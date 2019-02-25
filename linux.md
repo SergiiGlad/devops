@@ -240,6 +240,13 @@ The **procfs** filesystem provides insight into many of the kernel data structur
 ###### #qemu-system-i386 -hda /dev/sdb
 
 
+### Crack the passwords
+
+John the Ripper
+
+​https://www.openwall.com/john/
+
+
 
 
 
