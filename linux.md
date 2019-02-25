@@ -242,10 +242,15 @@ The **procfs** filesystem provides insight into many of the kernel data structur
 
 ### Crack the passwords
 
-John the Ripper
+John the Ripper <https://www.openwall.com/john/>
 
-​https://www.openwall.com/john/
+WireShark Blog Sedicomm http://blog.sedicomm.com/2017/03/27/10-sovetov-po-ispolzovaniyu-wireshark-dlya-analiza-paketov-dannyh/
 
+https://static-course-assets.s3.amazonaws.com/CyberEss/ru/course/files/5.1.2.4%20Lab%20-%20Password%20Cracking.pdf
+
+###### $ sudo unshadow /etc/passwd /etc/shadow > mypass
+###### $ wget https://mirrors.edge.kernel.org/openwall/wordlists/passwords/password.gz
+###### $ john --wordlist=password --rules mypass --format=crypt
 
 
 
