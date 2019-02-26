@@ -89,7 +89,6 @@ patching file file1.txt
 
 ###### $ pr -l 15 -w 65 distros.txt { formatting our distros.txt file to printing into a series of short pages } 	
 
-
 ###### $ printf "I formatted the string: %s\n" foo
 
 |Specifier| Description|
@@ -106,7 +105,24 @@ patching file file1.txt
 
 ###### $ zcat /usr/share/man/man1/bash.1.gz  | groff -mandoc > ~/Desktop/bash.ps  { formatting to PostScript }
 
-###### $ $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF } 
+###### $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF } 
+
+#### Printig
+
+  * pr – Convert text files for printing
+  * lpr – Print files
+  * a2ps – Format files for printing on a PostScript printer
+  * lpstat – Show printer status information
+  * lpq – Show printer queue status
+  * lprm – Cancel print jobs
+
+
+Common Unix Printing System (CUPS) provides print drivers and print-job man-
+agement, and the second, Ghostscript, a PostScript interpreter, acts as a RIP.
+
+###### $ lpstat -s { info about printers }
+###### $ lpq { maintaining print queues }
+
 
 
 
