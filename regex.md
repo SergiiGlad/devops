@@ -78,9 +78,35 @@ patching file file1.txt
 
 ###### $ aspell -H check foo.txt { check spelling }
 
+###### echo "The quick brown fox jumped over the lazy dog." | fold -w 10 
+	The quick 
+	brown fox 
+	jumped ove
+	r the lazy
+	 dog.
+
+###### $ fmt -w 50 fmt-info.txt | head  { to reformat this text to fit a 50-character-wide column }
+
+###### $ pr -l 15 -w 65 distros.txt { formatting our distros.txt file to printing into a series of short pages } 	
 
 
+###### $ printf "I formatted the string: %s\n" foo
 
+|Specifier| Description|
+| --- | --- |
+|d |Format a number as a signed decimal integer.
+|f |Format and output a floating-point number.
+|o |Format an integer as an octal number.
+|s |Format a string.
+|x |Format an integer as a hexadecimal number using lowercase a to f where needed.
+|X |Same as x but use uppercase letters.
+|% |Print a literal % symbol (i.e., specify %%)
+
+###### $ printf "%d, %f, %o, %s, %x, %X\n" 380 380 380 380 380 380
+
+###### $ zcat /usr/share/man/man1/bash.1.gz  | groff -mandoc > ~/Desktop/bash.ps  { formatting to PostScript }
+
+###### $ $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF } 
 
 
 
