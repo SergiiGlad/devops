@@ -107,7 +107,7 @@ patching file file1.txt
 
 ###### $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF } 
 
-#### Printig
+#### Printing
 
   * pr – Convert text files for printing
   * lpr – Print files
