@@ -61,7 +61,7 @@ Creating and Using a Swap File https://docs.oracle.com/cd/E52668_01/E54669/html/
 
 ### File System Administration
 
-T
+###### $ lsblk { list block devices }
 ###### # blkid /dev/sdb1 ------ display the type of a file system, use the blkid command
 ###### # cat /proc/mounts ------ to display information about mounted file systems
 ###### # df -h ------ displays information about home much space remains on mounted file 
