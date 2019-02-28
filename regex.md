@@ -55,8 +55,12 @@ The quick brown fox jumped over the lazy dog 1 .
 
 ###### $ ls -lt { list and sort by time }
 ###### $ ls -l /usr/bin | sort -nr -k 5 | head  { list and sort by time }
-###### $ sort -t ':' -k 3n -k 4n /etc/passwd | head
+
+###### $ sort -t ':' -k 3n -k 4n /etc/passwd | head { sort by several fields }
+
 ###### $ cut -d ':' -f 1,3 /etc/passwd { user name, uid }
+###### $ echo '1234567890' | cut -c 1-5 { 12345 }
+
 ###### $ comm /ets/shadow /etc/shadow- { compare sorted files by lines }
 
 ###### # diff /etc/shadow /etc/shadow- { compare by text }
