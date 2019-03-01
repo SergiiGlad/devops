@@ -26,6 +26,7 @@ Better yet, don’t rely on the wrapper scripts for pip, venv and other Python m
 ### (or if you prefer being explicit, 'python -m pip install requests').
 ### The **--system-site-packages** switch makes the environment re-use libraries installed system-wide. 
 
+**Note:** Use the `deactivate` command to exit out of an active virtual environment.
 
 ## Takeaways
 
