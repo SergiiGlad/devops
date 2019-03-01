@@ -24,11 +24,16 @@ Development project often consists of many developers, all working on individual
 
   * **Continuous Integration**: Merging of development work with code base constantly so that automated tetsing can catch problems early
   * **Continuous Delivery**: Software package delivery mechanism for releasing code to staging for review and inspection
-  * **Continuous Deployment**: Relies on CI and CD to automatically release code into production as soon as it is redy. Constant flow of new features into production
+  * **Continuous Deployment**: Relies on CI and CD to automatically release code into production as soon as it is ready. Constant flow of new features into production
 
 Continuous Integration ----> Continuous Delivery ----> Continuous Deployment
 
 
 **The microservice-based approach to architecting an application uses an API to expose discrete functions of the application; these functions are know as _microservices_**
+
+### Container:
+  * Containers may run on a bare-metal system or in a virtualized OS.
+  * Containers (at least the Docker model) are "immutable", meaning that they cannot be changed. In fact, they are versioned, similar to source control.
+  * An application in a container typically runs as **root**. However, it does not have unrestricted access to the entire system on which it runs.
 
 
