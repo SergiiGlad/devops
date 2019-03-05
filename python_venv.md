@@ -1,4 +1,6 @@
 
+## Python virtual environments
+
 https://developers.redhat.com/blog/2018/08/13/install-python3-rhel/
 
 ### Using Python virtual environments is a best practice to isolate project-specific dependencies and create reproducible environments. 
@@ -14,6 +16,60 @@ By default, virtual environments will not use any system installed modules, or m
 To avoid surprises, don’t type python. Use an explicit version number in the command, such as python3.6 or python2.7.
 
 ### Do not run pip install as root (or with sudo)
+
+#### Python 3 
+
+1. First create a Python 3 virtual environment using this command:
+```
+python3.7 -m venv py3-myvenv
+```
+2. Now activate thr evironment. Look in your prompt for the name of the virtual environment, enclosed in parenthesis, after activation.
+```
+source py3-myvenv/bin/activate
+```
+3. Now verify that `python` is now linked to Python 3.
+```
+python -V
+```
+```
+Python 3.7.0
+```
+4. Deactivate the virtual environment.
+```
+deactivate
+```
+
+#### Python 2
+
+1. Install the 	`virtualenv` package for Python within Python 2.
+```
+python2.7 -m pip install virtualenv
+```
+```
+Successfully installed virtualenv-15.2.0
+```
+2. Now create a Python 2 virtual environment using the newly installed `virtualenv` module for Python 2.
+```
+python2.7 -m virtualenv py2-myvenv
+```
+3. Now "activate" the environment. Look for the name of the virtual environment to be enclosed ip parenthesis after activation.
+```
+source py2-myvenv/bin/activate
+```
+4. Now verify thet `python` is now linked to Python 2.
+```
+python -V
+```
+```
+Python 2.7.15
+```
+5. Deactivate the virtual environment.
+```
+deactivate
+```
+
+
+
 
 
 
