@@ -14,6 +14,11 @@ The main difference between any job and a Pipeline Job is that the Pipeline Scri
 
 ![alt text](six_parts.png)
 
+
+### Continuous Integration (CI) and Continuous Deploymnent (CD) techniques and principals designed to automate the workflow of a modern app developer.
+
+### A CI/CD server allows us to piece together actions for our pipeline such as test code, package code, deploy code with simple "if. then, else" style logic.
+
 ### CI - Continuous Intergation
 
 Development project often consists of many developers, all working on individual features and code. Eventually the individual work needs to be brought together and combined into a single code base. Individual developers should be testing their code as they work, but that code still needs re-verifying when it's part of the full codebase.
