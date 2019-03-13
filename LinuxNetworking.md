@@ -14,6 +14,11 @@ For permanent changes that persist across system restarts, add lines to the /etc
 
 ###### $  ncat -l --proxy-type http localhost 8080
 
+#### Measurements of the maximum achivable bandwidth on IP networks
+
+__host1__ `$ iperf -s -u`
+__host2__ `$ iperf -c IPADRESS -u`
+
 ### Linux Network Manager
 
 ###### # systemctl status network.service { start, restart, status }

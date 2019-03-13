@@ -16,3 +16,4 @@ https://developers.redhat.com/HW/Go-RHEL-7/#working_with_software_collection_pac
 | short | Short | 2 | -32768 |	32767
 | | unsignet short |
 
+Python ( int, float, bool, str, bytes )
