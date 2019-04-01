@@ -12,6 +12,8 @@
 
 ###### $ pidstat
 ###### $ htop
+###### $ pidof
+###### $ pstree { pstree $(pidof dockerd) }
 
 ###### $ time python ‐c "import time; time.sleep(1)" { time on run program }
 ###### $ mpstat -P ALL 1 { on each core }
@@ -41,6 +43,7 @@
 ###### $ route -n
 ###### $ ip route show { ip r s }
 ###### $ netstat -nr
+###### $ cat /proc/net/fib_trie
 
 ###### $ sudo netstat -tnlp { list ports }
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
@@ -48,6 +51,7 @@
 ###### $ sar ‐1 TCP,ETCP 1
 ###### $ tcpdump -i eth0
 ###### $ tcpdump ‐w test.dump
+###### $ ss { similar netstat socket stat }
 
 
 

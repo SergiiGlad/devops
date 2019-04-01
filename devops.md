@@ -4,6 +4,9 @@ https://medium.com/@devfire/how-to-become-a-devops-engineer-in-six-months-or-les
 
 DevOps is a way to deliver software with shared pain and responsibility.
 
+**devops**:DevOps is meant to combine the words developer and operations.It's an engineering practice and culture of automating and monitoring infrastructure to build and run software and services.
+**netdevops**: NetDevOps expands upon DevOps principles, extending the engineering practices to the network.
+
 #### What is the difference between Pipeline and Project in Jenkins?
 
 The main difference between any job and a Pipeline Job is that the Pipeline Scripted job runs on the Jenkins master, using a lightweight executor expected to use very few resources in order to translate the pipeline to atomic commands that execute or send to the agents.

@@ -1,4 +1,5 @@
 
+Does Open Source speak to you on a personal level? That's great, grab your penguin and let's dive in and make Linus proud!
 
 Hello World - installing Go on RHEL 7
 

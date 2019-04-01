@@ -15,4 +15,4 @@ piled programs, should be placed in the /usr/local hierarchy and not in /bin or 
 usr/bin. These directories are specified by the Linux Filesystem Hierarchy Standard
 to contain only files supplied and maintained by the Linux distributor.
 
-
+echo "Would you like to continue? [yes\no]"; read CON; if [ ${CON} != "yes" ]; then echo "Canceled"; else echo "Runnnig..."; fi

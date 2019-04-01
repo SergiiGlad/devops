@@ -119,3 +119,36 @@ Next, checkout your feature branch, and execute git stash pop. This will take th
 ###### $ git stash pop { return to changes }
 
 [Usefull link ] (http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/ru/ch01.html " Волшебство Git")
+
+
+#### Inspecting Things
+
+*  git diff - See all file changes locally
+*  git log - See all commit history
+*  git blame my_file - See who change 
+*  git reflog - Show a log of changes to the local repository's HEAD. Good for finding lost work.
+
+#### Undoing Things
+
+*  git reset --hard HEAD - discard staged and unstaged changes sinc the most recent commit.
+     --hard - specifies that both the staged and unstaged changes are discarded
+     HEAD - specify a different commit instead of HEAD to discard changes since that commit
+
+*  git checkout my_commit  - discard unstaged changes since my_commit
+
+*  git revert my_commit - Undo the effects of changes in my_commit. ```revert``` makes a new commit when it undoes the changes.
+
+* git clean -n - Delete untracked files in the local working directory.
+	By default files untracked by .gitignore will not be deleted, but this behavior can be altered.
+
+#### Tidying Things
+
+*  git commit --amend - add your staged changes to the most recent commit. If nothing is staged just commit message
+
+*  git push my_remote --tags - Send all local tags to the remote repo. Good for versioning changes.
+
+#### Change Default Editor
+
+###### $ git config --global core.editor "atom --wait"
+
+  
