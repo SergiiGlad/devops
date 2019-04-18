@@ -16,3 +16,19 @@ usr/bin. These directories are specified by the Linux Filesystem Hierarchy Stand
 to contain only files supplied and maintained by the Linux distributor.
 
 echo "Would you like to continue? [yes\no]"; read CON; if [ ${CON} != "yes" ]; then echo "Canceled"; else echo "Runnnig..."; fi
+
+##
+#!/bin/bash 
+
+number=
+if [ $number=1 ]; then echo "Number is equal to 1 "  # [ =1 ]
+if [ "$number"=1 ]; then echo "Number is equal to 1" # [ ""=1 ]
+# "" prevent empty value
+
+##
+
+[[ -d $myfolder ]] && cd $myfolder && rm * # prevent remove data without cd command
+#!/bin/bash -x 
+-x debug mode
+ 
+ 

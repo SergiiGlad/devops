@@ -11,3 +11,14 @@ Scripts that run after the machines are launched can be configured through sever
 Provisioners are meant to leverage provisioning (installing dependencies), automation, configuration maangemetn, and orchestration. This meets the DevOps way of thinking and working.
 
 ![alt text](vagrant.png)
+
+###### $ vagrant init hashicorp/precise64
+###### $ vagrant box list
+###### $ vagrant up
+###### $ vagrant ssh
+###### $ vagrant status
+###### $ vagrant global-status
+###### $ vagrant port
+
+
+
