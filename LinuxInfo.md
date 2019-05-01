@@ -53,6 +53,8 @@
 ###### $ find ~ -iname '*.jpg' -print0 | xargs --null ls -l { list files with spaces in name }
 
 
+
+
 | Parametrs | Desc |
 | --- | --- | 
 | -depth | Требует от find обработать сначала файлы в каталогах и только потом каталоги. Этот параметр автоматически применяется с операцией -delete |
@@ -63,3 +65,6 @@
 
 
 
+## Use pwd to search from any directory you are in, recursing downward
+
+grep -rnw `pwd` -e "pattern"
