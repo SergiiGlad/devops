@@ -39,6 +39,7 @@
 ###### $ iotop { I/O CPU }
 ###### $ sudo iftop -i eth0 { send/recieve network interface }
 ###### $ ifstat { reports the network bandwidth in a batch style mode }
+###### $ netstat -i { network metrics }
 ##
 ###### $ ip address { ip a }
 ###### $ brctl show
