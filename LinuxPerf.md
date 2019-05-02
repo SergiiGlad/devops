@@ -38,6 +38,7 @@
 ###### $ iostat { read/write disk operation }
 ###### $ iotop { I/O CPU }
 ###### $ sudo iftop -i eth0 { send/recieve network interface }
+###### $ ifstat { reports the network bandwidth in a batch style mode }
 ##
 ###### $ ip address { ip a }
 ###### $ brctl show
