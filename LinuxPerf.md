@@ -26,6 +26,7 @@
 ###### $ vmstat 1
 ###### $ ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
 ##
+###### $ lsblk
 ###### $ sudo fdisk -l
 ###### $ sudo cfdisk
 ###### $ sudo gdisk
