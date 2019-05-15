@@ -17,6 +17,7 @@
 ###### $ sar -r 
 ###### $ time python ‐c "import time; time.sleep(1)" { time on run program }
 ###### $ mpstat -P ALL 1 { on each core }
+###### # fuser /var/run/docker.sock { to get number processes which use file } 
 ##
 ###### $ cat /proc/meminfo
 ###### $ free -ht { human readable , total sum with swap }
