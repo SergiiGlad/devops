@@ -1,3 +1,3 @@
 ## Gitflow
 
-![alt text] (GitWorkflow.png)
+![alt text](GitWorkflow.png)
