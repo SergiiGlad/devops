@@ -10,7 +10,7 @@
 ###### $ cat /proc/uptime { 192411.43 130228.29 }
 ###### $ cat /proc/loadavg { 0.60 0.86 1.00 1/824 15317 }
 ##
-###### $ pidstat
+###### $ pidstat -r { memory leak }
 ###### $ htop
 ###### $ pidof java
 ###### $ pstree 1 { pstree $(pidof dockerd) }
