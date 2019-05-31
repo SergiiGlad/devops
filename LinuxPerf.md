@@ -54,9 +54,18 @@
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
 ###### $ sar -n DEV 1 { info rx/tx by each interface }
 ###### $ sar ‐1 TCP,ETCP 1
+
 ###### $ tcpdump -i eth0
 ###### $ tcpdump ‐w test.dump
+###### # tcpdump -n host google.com
+###### # tcpdump -n not host domain.com
+###### # tcpdump -n port 53 or port 443
+###### # tcpdump -n -l host web1 | tee outputfile { -l oprion buffers to output }
+###### # tcpdump -w -C 10 -W 5 output.pcap { for Wireshark 5 files 10M }
+###### # tcpdump -n -r output.pcap { real time }
+
 ###### $ ss { similar netstat socket stat }
+###### # iptables -L
 ##
 ###### $ cat /proc/cpuinfo
 ###### $ lscpu
