@@ -10,7 +10,7 @@
 ###### $ cat /proc/uptime { 192411.43 130228.29 }
 ###### $ cat /proc/loadavg { 0.60 0.86 1.00 1/824 15317 }
 ##
-###### $ sudo starce -p $POD { figure out what a process is actually doing }
+###### $ sudo starce -p $PID { figure out what a process is actually doing }
 ###### $ pidstat -r { memory leak }
 ###### $ htop
 ###### $ pidof java
