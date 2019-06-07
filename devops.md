@@ -22,11 +22,13 @@ The main difference between any job and a Pipeline Job is that the Pipeline Scri
 
 ### A CI/CD server allows us to piece together actions for our pipeline such as test code, package code, deploy code with simple "if. then, else" style logic.
 
-### CI - Continuous Intergation
+## CI - Continuous Intergation
 
 Development project often consists of many developers, all working on individual features and code. Eventually the individual work needs to be brought together and combined into a single code base. Individual developers should be testing their code as they work, but that code still needs re-verifying when it's part of the full codebase.
 
-### Continuous Development ( CICD )
+## CD - Continuous Delivery
+
+## Continuous Development ( CICD )
 
 **Continuous development is the natural progression of iteration times shrinking into insignificance. Thtough heavy use of automation, flexible infrastructure and modular architecture, software development leaders have come to the point where each code change is its own deploymnet.
 
