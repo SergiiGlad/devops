@@ -18,9 +18,9 @@ The four commands above copy files between the working directory, the stage (als
  *   ```git checkout HEAD -- files``` copies files from the latest commit to both the stage and the working directory.
 
 ## Diff
-1
-1
-1
+2
+3
+4
 
 ###### $ git diff
 
