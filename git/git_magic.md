@@ -21,6 +21,9 @@ The four commands above copy files between the working directory, the stage (als
 2
 3
 4
+5
+6
+7
 
 ###### $ git diff
 
