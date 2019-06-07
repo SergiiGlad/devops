@@ -1,5 +1,5 @@
 
-## IIIIIIIntro to version control systems
+## Intro to version control systems
 
 ##### A number of Version Control Systems are available today (Git, Mercurial, Subversion, and others...). 
 
