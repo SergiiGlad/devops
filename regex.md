@@ -48,51 +48,52 @@ grep [options] regex [file...]
 [:space:] | The whitespace characters including space, tab, carriage return, newline, vertical tab, and form feed. In ASCII, equivalent to:[ \t\r\n\v\f]
 [:upper:] | The uppercase characters.
 
+-----
 
 ###### $ cat > foo.txt
 The quick brown fox jumped over the lazy dog 1 .
 ###### $ cat -A foo.txt { cat with spec symbol like TAB ENTER EOL}
-
+-----
 ###### $ ls -lt { list and sort by time }
 ###### $ ls -l /usr/bin | sort -nr -k 5 | head  { list and sort by time }
-
+------
 ###### $ sort -t ':' -k 3n -k 4n /etc/passwd | head { sort by several fields }
-
 ###### $ cut -d ':' -f 1,3 /etc/passwd { user name, uid }
+###### $ cut -d: -f7 < /etc/passwd | sort -u { all no duplicat shells }
 ###### $ echo '1234567890' | cut -c 1-5 { 12345 }
-
+-------
 ###### $ comm /ets/shadow /etc/shadow- { compare sorted files by lines }
-
+-------
 ###### # diff /etc/shadow /etc/shadow- { compare by text }
 ###### # diff -c /etc/shadow /etc/shadow- { context format }
 ###### # diff -u /etc/shadow /etc/shadow- { universal compact format }
-
+-----------
 ##### Patching
 ###### $ diff -Naur file1.txt file2.txt > patchfile.txt
 ###### $ patch < patchfile.txt
 patching file file1.txt
 ###### $ cat file1.txt
-
+----------
 ###### $ echo "lower" | tr a-z A-Z { translate to LOWER }
 ###### $ tr -d '\r' < файл_dos > файл_unix { dos2unix }
 ###### $ echo "front" | sed 's/front/back/'
 ###### $ sed -n '/SUSE/p' distros.txt { like grep SUSE distros.txt }
 ###### $ sed -n '/SUSE/!p' distros.txt { !SUSE }
 ###### $ sed -i 's/foo/boo/' foo.txt { -i replace input file}
-
+------------
 ###### $ aspell -H check foo.txt { check spelling }
-
+---------------
 ###### echo "The quick brown fox jumped over the lazy dog." | fold -w 10 
 	The quick 
 	brown fox 
 	jumped ove
 	r the lazy
 	 dog.
-
+-------------
 ###### $ fmt -w 50 fmt-info.txt | head  { to reformat this text to fit a 50-character-wide column }
-
+----------
 ###### $ pr -l 15 -w 65 distros.txt { formatting our distros.txt file to printing into a series of short pages } 	
-
+-------------------
 ###### $ printf "I formatted the string: %s\n" foo
 
 |Specifier| Description|
@@ -104,13 +105,13 @@ patching file file1.txt
 |x |Format an integer as a hexadecimal number using lowercase a to f where needed.
 |X |Same as x but use uppercase letters.
 |% |Print a literal % symbol (i.e., specify %%)
-
+-----------------
 ###### $ printf "%d, %f, %o, %s, %x, %X\n" 380 380 380 380 380 380
-
+--------------------
 ###### $ zcat /usr/share/man/man1/bash.1.gz  | groff -mandoc > ~/Desktop/bash.ps  { formatting to PostScript }
-
+---------------------
 ###### $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF } 
-
+---------------
 #### Printing
 
   * pr – Convert text files for printing
@@ -119,7 +120,7 @@ patching file file1.txt
   * lpstat – Show printer status information
   * lpq – Show printer queue status
   * lprm – Cancel print jobs
-
+---------------------
 
 Common Unix Printing System (CUPS) provides print drivers and print-job man-
 agement, and the second, Ghostscript, a PostScript interpreter, acts as a RIP.
