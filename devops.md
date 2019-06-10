@@ -34,6 +34,8 @@ Development project often consists of many developers, all working on individual
 
 A software engineering approach in which teams produce siftware inshort cycles, ensuring thet software can be reliably released at any time.
 
+## CD - Continuous Deployment
+
 ## Continuous Development ( CICD )
 
 **Continuous development is the natural progression of iteration times shrinking into insignificance. Thtough heavy use of automation, flexible infrastructure and modular architecture, software development leaders have come to the point where each code change is its own deploymnet.
