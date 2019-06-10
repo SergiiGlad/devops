@@ -1,3 +1,7 @@
+_DevOps is the union of people, processes and products to enable continuous delivery of value to end users."_
+                                                                                     - _Donovan Brown_ -
+
+
 # How To Become a DevOps Engineer 
 
 https://medium.com/@devfire/how-to-become-a-devops-engineer-in-six-months-or-less-366097df7737
@@ -27,6 +31,8 @@ The main difference between any job and a Pipeline Job is that the Pipeline Scri
 Development project often consists of many developers, all working on individual features and code. Eventually the individual work needs to be brought together and combined into a single code base. Individual developers should be testing their code as they work, but that code still needs re-verifying when it's part of the full codebase.
 
 ## CD - Continuous Delivery
+
+A software engineering approach in which teams produce siftware inshort cycles, ensuring thet software can be reliably released at any time.
 
 ## Continuous Development ( CICD )
 
