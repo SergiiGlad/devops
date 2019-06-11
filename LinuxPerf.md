@@ -27,8 +27,12 @@
 ###### $ top
 ###### $ vmstat 1
 ###### $ ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
-##
-###### $ lsblk
+
+## Disk
+
+###### $ findmnt { to list all mounted file system }
+###### $ blkid
+###### $ lsblk --fs /dev/sda1
 ###### $ sudo fdisk -l
 ###### $ sudo cfdisk
 ###### $ sudo gdisk
@@ -37,6 +41,7 @@
 ###### $ sudo parted /dev/sda
 ###### $ df -h
 ###### $ du -sh /home/user { size of folder /home/user }
+
 ##
 ###### $ iostat { read/write disk operation }
 ###### $ iotop { I/O CPU }
