@@ -28,13 +28,17 @@ The main difference between any job and a Pipeline Job is that the Pipeline Scri
 
 ## CI - Continuous Intergation
 
-Development project often consists of many developers, all working on individual features and code. Eventually the individual work needs to be brought together and combined into a single code base. Individual developers should be testing their code as they work, but that code still needs re-verifying when it's part of the full codebase.
+  Development project often consists of many developers, all working on individual features and code. Eventually the individual work needs to be brought together and combined into a single code base. Individual developers should be testing their code as they work, but that code still needs re-verifying when it's part of the full codebase.
+  Developing software requires planning for change, contibuously observing the results, and incrementally course-correcting based on the results. This is how CI operates.
+  The practice of merging all developer working copies to a shared code line several times a day, and validating each integration with an automated build.
 
 ## CD - Continuous Delivery
 
-A software engineering approach in which teams produce siftware inshort cycles, ensuring thet software can be reliably released at any time.
+  A software engineering approach in which teams produce software inshort cycles, ensuring thet software can be reliably released at any time. 
+  In practice, continuous delivery focuses on an automated deployment pipeline.
 
 ## CD - Continuous Deployment
+  Continuous Deploymnet is generally defined as a Continuous Delivery pipeline with no manual gates between initial code commit / check-in and production.
 
 ## Continuous Development ( CICD )
 
