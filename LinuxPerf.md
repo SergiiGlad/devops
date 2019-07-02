@@ -58,8 +58,7 @@
 ###### $ netstat -nr
 ###### $ cat /proc/net/fib_trie
   
-  show all aopen TCP/IP socket
-§# lsof -i§  
+      show all aopen TCP/IP socket `# lsof -i§`  
 ---
 ###### $ sudo netstat -tnlp { list ports }
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
