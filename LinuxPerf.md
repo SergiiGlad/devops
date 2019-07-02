@@ -48,19 +48,20 @@
 ###### $ sudo iftop -i eth0 { send/recieve network interface }
 ###### $ ifstat { reports the network bandwidth in a batch style mode }
 ###### $ netstat -i { network metrics }
-##
+## Network
 ###### $ ip address { ip a }
 ###### $ brctl show
 ###### $ route -n
 ###### $ ip route show { ip r s }
 ###### $ netstat -nr
 ###### $ cat /proc/net/fib_trie
-##
+###### # lsof -i {show all aopen TCP/IP socket } 
+---
 ###### $ sudo netstat -tnlp { list ports }
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
 ###### $ sar -n DEV 1 { info rx/tx by each interface }
 ###### $ sar ‐1 TCP,ETCP 1
-
+---
 ###### $ tcpdump -i eth0
 ###### $ tcpdump ‐w test.dump
 ###### # tcpdump -n host google.com
