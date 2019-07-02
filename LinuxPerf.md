@@ -48,14 +48,18 @@
 ###### $ sudo iftop -i eth0 { send/recieve network interface }
 ###### $ ifstat { reports the network bandwidth in a batch style mode }
 ###### $ netstat -i { network metrics }
+
 ## Network
+---
 ###### $ ip address { ip a }
 ###### $ brctl show
 ###### $ route -n
 ###### $ ip route show { ip r s }
 ###### $ netstat -nr
 ###### $ cat /proc/net/fib_trie
-###### # lsof -i {show all aopen TCP/IP socket } 
+  
+  show all aopen TCP/IP socket
+§# lsof -i§  
 ---
 ###### $ sudo netstat -tnlp { list ports }
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
