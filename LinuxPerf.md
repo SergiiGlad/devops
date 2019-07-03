@@ -56,9 +56,9 @@
 ###### $ route -n
 ###### $ ip route show { ip r s }
 ###### $ netstat -nr
-###### `cat /proc/net/fib_trie` show ip address <br>
-###### `cat /proc/net/route` show ip table <br>
-###### `lsof -i` show all TCP/IP socket <br>
+###### `# cat /proc/net/fib_trie`  { show ip address }
+###### `# cat /proc/net/route` { show ip table }
+###### `# lsof -i` { show all TCP/IP socket } 
 ---
 ###### $ sudo netstat -tnlp { list ports }
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
