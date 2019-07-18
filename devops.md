@@ -50,6 +50,8 @@ The main difference between any job and a Pipeline Job is that the Pipeline Scri
 
 Continuous Integration ----> Continuous Delivery ----> Continuous Deployment
 
+![alt text](cicd.png)
+
 
 **The microservice-based approach to architecting an application uses an API to expose discrete functions of the application; these functions are know as _microservices_**
 
