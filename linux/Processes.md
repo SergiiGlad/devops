@@ -11,7 +11,16 @@ Foor most processes the UID and EUID are the same **EUID** effective user ID
 **GID and EGID** real and effective group ID
 
 ### Niceness
+
 A process's scheduling priority determines how much CPU time it receives
+
+#### NICE AND RENICE
+
+The most common range is -20 to +19
+A low or negative value means high priority
+
+Run with modified scheduling priority ```nice -n 5 /bin/dockerd```
+Alter priority ```renice -5 8829```
 
 ### The life cycle of a process
 
@@ -41,16 +50,6 @@ The ```kill``` command is most often used to terminate a process
  * Sleeping
  * Zombie
  * Stopped
-
-
-### NICE AND RENICE
-
-The most common range is -20 to +19
-A low or negative value means high priority
-
-Run with modified scheduling priority ```nice -n 5 /bin/dockerd```
-Alter priority ```renice -5 8829```
-
 
 ### MONITORING PROCESSES
 
