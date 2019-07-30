@@ -28,7 +28,7 @@ A list of signals names and number is also available from the bash built-in comm
 
 ### KILL:SEND SIGNALS
 
-The ```kill`` command is most often used to terminate a process
+The ```kill``` command is most often used to terminate a process
 ``` kil -9 pid``` kill send signal
 
 ```killall httpd``` kills processes by name
@@ -80,6 +80,6 @@ Linux lets you directly observe a process with the  __strace__ command, which sh
 
 Use the ```uptime``` command to show the load averages over 1,5, and 15 minute intervals
 
-Use ```fuser`` and ```lsof``` commands to determine which process is using the file
+Use ```fuser``` and ```lsof``` commands to determine which process is using the file
 
 ```strace -p 5810```
