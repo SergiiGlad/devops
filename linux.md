@@ -103,6 +103,10 @@ A loop device allows you to access a file as a block device. For example, to mou
 ###### 5 - Graphical mode ( X11 mode )
 ###### 6 - reboot ( do not set initdefault to this)
 
+## Command to reboot or shutdown Linux
+
+[Command to reboot and shutdown Linux](https://opensource.com/article/19/7/reboot-linux?sc_cid=701f2000000RtqCAAS)
+
 #### Reboot
 ###### # systemctl reboot
 ###### # init 6
@@ -110,7 +114,7 @@ A loop device allows you to access a file as a block device. For example, to mou
 ###### # shutdown -r now
 
 #### Shutdown
-$ echo ‑e "We are experiencing system problemsOutage rescheduled to 02:30" | wall
+$ echo ‑e "We are experiencing system problems Outage rescheduled to 02:30" | wall
 ###### # shutdown -h now
 ###### # halthi
 ###### # poweroff
