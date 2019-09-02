@@ -5,8 +5,10 @@
 __Sysfs__ is a virtual filesystem that the Linux kernel uses. to export information about kernel objects to processes in user space.
 
 Entry in /etc/fstab
-  mount -t sysfs sysfs /sys
-  
-ls /sys/bloc you find your block devices
+```  
+mount -t sysfs sysfs /sys
+```  
 
-tree /sys/bloc is a useful tool for exploring /sys
+```ls /sys/bloc``` you find your block devices
+
+```tree /sys/bloc``` is a useful tool for exploring /sys
