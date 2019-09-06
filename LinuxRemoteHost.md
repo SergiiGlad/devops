@@ -29,7 +29,6 @@
 
   (except SSH traffic, so we can repair the node later if needed)
 
-.exercise[
 
 - SSH to the node to disrupt:
   ```bash
@@ -42,14 +41,13 @@
   sudo iptables -I OUTPUT 2 -j DROP
   ```
 
-]
 ---
 
 ## Re-enable the node
 
 - Let's fix the node that we disconnected from the network
 
-.exercise[
+
 
 - SSH to the node:
   ```bash
@@ -61,7 +59,6 @@
   sudo iptables -D OUTPUT 2
   ```
 
-]
 
 ---
 
