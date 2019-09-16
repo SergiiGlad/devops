@@ -82,6 +82,15 @@ The 6 Monitoring Areas
 
 **cloud computing** is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction” 
 
+## DevOps automation
+
+__Continuous integration__ is a DevOps practice where developers continuously commit their code changes into a source repository. Then, at regular intervals, the system will conduct an automated build, deploy, and test.
+
+__Continuous delivery__ expands on continuous integration by automatically deploying code changes through the support environments, pausing for _approval_ before going to production.
+
+__Continuous deployment__ does not wait for approval; rather, it goes to production automatically after successfully passing through automated testing in the support environments.
+
+
 
 
 
