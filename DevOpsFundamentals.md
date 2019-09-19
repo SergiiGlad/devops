@@ -13,6 +13,33 @@ What Is DevOps?
 * Work as a team
 * Kaizen is everybody’s business
 
+## DevOps tools
+
+*. Source code repository 
+  * Git 
+  * CloudForce 
+  * TFC
+  * Subversion
+  
+*. Build server
+   * SonarQube
+   * Jenkins
+   * Artifactory
+   
+* Configuration management
+  * Puppet
+  * Ansible
+  * Salt
+  * Chef
+  
+* Test automation
+  * Selenium
+  * Water
+
+* Virtual infrastructure
+  * Amazone Web Services
+  * Microsoft Azure
+  * VMware vCloud
 ## Infrastructure Automation
 
 Infrastructure AS Code
