@@ -15,31 +15,13 @@ What Is DevOps?
 
 ## DevOps tools
 
-*. Source code repository 
-  * Git 
-  * CloudForce 
-  * TFC
-  * Subversion
-  
-*. Build server
-   * SonarQube
-   * Jenkins
-   * Artifactory
-   
-* Configuration management
-  * Puppet
-  * Ansible
-  * Salt
-  * Chef
-  
-* Test automation
-  * Selenium
-  * Water
+--- | ---
+Source code repository | Git CloudForce TFC Subversion
+Build server | SonarQube Jenkins Artifactory
+Configuration management | Puppet Ansible Salt Chef
+Test automation | Selenium Water
+Virtual infrastructure | Amazone Web Services Microsoft Azure VMware vCloud
 
-* Virtual infrastructure
-  * Amazone Web Services
-  * Microsoft Azure
-  * VMware vCloud
 ## Infrastructure Automation
 
 Infrastructure AS Code
