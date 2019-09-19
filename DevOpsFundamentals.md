@@ -15,7 +15,7 @@ What Is DevOps?
 
 ## DevOps tools
 
-Dev | tools
+DevOps | tools
 --- | ---
 Source code repository | Git CloudForce TFC Subversion
 Build server | SonarQube Jenkins Artifactory
