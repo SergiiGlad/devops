@@ -3,11 +3,14 @@ http://opensource.com/article/19/9/linux-commands-hardware-information
 
 ## Hardware overview
 
-```hwinfo --short```
-
+```
+$ hwinfo --short
+```
 or
 
-```lshw -short```
+```
+$ lshw -short
+```
 
 The long full froms but hard to read output 
 
@@ -15,30 +18,43 @@ The long full froms but hard to read output
 
 ## CPU details
 
-```lscpu```
+```
+$ lscpu
+```
 or
 ```
-lshw -C cpu
+$ lshw -C cpu
 
-lshw -C cpu | grep -i mhz
+$ lshw -C cpu | grep -i mhz
 
 ```
 
 ## Memory
 
-```dmidecode -t memory | grep -i size```
+```
+# dmidecode -t memory | grep -i size
+```
 
 For more specifics
 
-```lshw -short -C memory```
+```
+$ lshw -short -C memory
+```
 
 Video device
 
-```lspci | grep -i vga```
+```
+$ lspci | grep -i vga
+```
 
-```free -m```
+Finally, to show current memory use in megabytes, issue:
+```
+$ free -m
+```
 or
 
-```top``` 
+```
+$ top
+``` 
 
 
