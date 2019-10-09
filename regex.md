@@ -32,24 +32,16 @@ grep [options] regex [file...]
 ^[A-Z]'
 '^[A-Za-z0-9]'
 
-command | desc
+desc |  grep
 --- | ---
 All lines wothout "#" | `$ grep -v "#" /etc/dnsmasq.conf`
-Show lines after **-A** and before **-B** and **-C** about | `$ ifconfig | grep -A 4 eth0`
-Count match word **-c** | `$ ifconfig | grep -c 192.168`
-
----------
-Number lines **-n** `$ ifconfig | grep -n 192.168`
-
-	Find recursive to throuth all files and folders
-###### $ grep -r mysql *
-
-	Find into zip files
-###### $ zgrep -i error /var/log/syslog.2.gz
-
-	Find by regex ```Egrep``` or ```grep -E```
-
-	Find by template ```fgrep -f```
+Show lines after **-A** and before **-B** and **-C** about | `$ ifconfig "\|" grep -A 4 eth0`
+Count match word **-c** | `$ ifconfig "\|" grep -c 192.168`
+Number lines **-n** | `$ ifconfig "\|" grep -n 192.168`
+Find recursive to throuth all files and folders | $ grep -r mysql *
+Find into zip files | $ zgrep -i error /var/log/syslog.2.gz
+Find by regex ```Egrep``` or ```grep -E```
+Find by template ```fgrep -f```
 
 ###### $ ls /sbin/[[:upper:]]* { only begin with Capital letter output - /sbin/NetworkManager /sbin/ModeManager }
 
