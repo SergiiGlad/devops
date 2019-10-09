@@ -71,7 +71,7 @@ Get specific STA disk, such as model and serial number
 
 List all disks with all their defined partitions
 ```
-lsblk
+$ lsblk
 ```
 For more detail such as number of sector, size, filesystem ID and type
 ```
@@ -96,7 +96,47 @@ $ lspci
 $ lsusb
 ```
 
+## Network
 
+To see hardware details
+```
+# lshw -C network
+```
+
+Traditionally
+```
+$ ifconfig -a
+```
+
+Many people use
+```
+$ ip link show
+```
+or
+```
+$ netstat -i
+```
+
+To show your default gateway and routing tables
+```
+$ ip route | column -t
+```
+or
+```
+$ netstat -r
+```
+
+## Software
+
+UEFI or BIOS date and version
+```
+# dmidecode -t bios
+```
+
+Kernel version
+```
+$ uname -a
+```
 
 
 
