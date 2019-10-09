@@ -12,7 +12,7 @@ or
 $ lshw -short
 ```
 
-The long full froms but hard to read output 
+The long full forms but hard to read output 
 
 ```hwinfo``` or ```lshw```
 
@@ -98,7 +98,7 @@ $ lsusb
 
 ## Network
 
-To see hardware details
+To see hardware details about your network card
 ```
 # lshw -C network
 ```
