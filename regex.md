@@ -26,11 +26,39 @@ grep [options] regex [file...]
 ###### $ ls /bin | grep [bg]zip - { bzip gzip }
 ###### $ ls /bin | grep [!bg]zip - { bg must not be present }
 
-	some patterns for grep
+#### Some patterns for grep
+
 '^[ABCDEFGHIJKLMNOPQRSTUVWXZY]'
 ^[A-Z]'
 '^[A-Za-z0-9]'
 
+All lines wothout "#"
+
+###### $ grep -v "#" /etc/dnsmasq.conf
+
+Show lines after __-A__ and before __-B__ and __-C__ about 
+
+###### $ ifconfig | grep -A 4 eth0
+
+Count match word __-c__
+
+###### $ ifconfig | grep -c 192.168
+
+Number lines __-n__
+
+##### ifconfig | grep -n 192.168
+
+Find recursive to throuth all files and folders
+
+###### $ grep -r mysql *
+
+Find into zip files
+
+###### $ zgrep -i error /var/log/syslog.2.gz
+
+Find by regex ```Egrep``` or ```grep -E```
+
+Find by template ```fgrep -f```
 ###### $ ls /sbin/[[:upper:]]* { only begin with Capital letter output - /sbin/NetworkManager /sbin/ModeManager }
 
 | Character Class | Description |
