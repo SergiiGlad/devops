@@ -32,9 +32,7 @@ grep [options] regex [file...]
 ^[A-Z]'
 '^[A-Za-z0-9]'
 
-All lines wothout "#"
-
-###### $ grep -v "#" /etc/dnsmasq.conf
+All lines wothout "#" ###### $ grep -v "#" /etc/dnsmasq.conf
 
 Show lines after __-A__ and before __-B__ and __-C__ about 
 
@@ -46,7 +44,7 @@ Count match word __-c__
 
 Number lines __-n__
 
-##### ifconfig | grep -n 192.168
+###### ifconfig | grep -n 192.168
 
 Find recursive to throuth all files and folders
 
