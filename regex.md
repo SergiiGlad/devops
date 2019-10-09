@@ -32,17 +32,14 @@ grep [options] regex [file...]
 ^[A-Z]'
 '^[A-Za-z0-9]'
 
-	All lines wothout "#" 
-###### $ grep -v "#" /etc/dnsmasq.conf
+All lines wothout "#" `$ grep -v "#" /etc/dnsmasq.conf`
+---
 
-	Show lines after **-A** and before **-B** and **-C** about 
-###### $ ifconfig | grep -A 4 eth0
-
-	Count match word **-c**
-###### $ ifconfig | grep -c 192.168
-
-	Number lines **-n**
-###### ifconfig | grep -n 192.168
+Show lines after **-A** and before **-B** and **-C** about `$ ifconfig | grep -A 4 eth0`
+---
+Count match word **-c** `$ ifconfig | grep -c 192.168`
+---
+Number lines **-n** `$ ifconfig | grep -n 192.168`
 
 	Find recursive to throuth all files and folders
 ###### $ grep -r mysql *
