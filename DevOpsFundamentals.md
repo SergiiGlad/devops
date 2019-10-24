@@ -98,6 +98,13 @@ __Continuous integration__ is a DevOps practice where developers continuously co
 
 The process of having shorter release cycles (sometimes serveral times a day) i.e creating small features and integrating them to the source code, and employing automated build and test processes for quicker feedback is called __Continuous Integration__
 
+The advantages of Continuous Integration includes:
+ * Frequent Commits hence small feature release
+ * Automated Build and Testing
+ * Instant Feedback to Developer
+ * Low Risk and Faster Delivery
+ 
+
 __Continuous delivery__ expands on continuous integration by automatically deploying code changes through the support environments, pausing for _approval_ before going to production.
 
 __Continuous deployment__ does not wait for approval; rather, it goes to production automatically after successfully passing through automated testing in the support environments.
