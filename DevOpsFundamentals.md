@@ -96,6 +96,8 @@ The 6 Monitoring Areas
 
 __Continuous integration__ is a DevOps practice where developers continuously commit their code changes into a source repository. Then, at regular intervals, the system will conduct an automated build, deploy, and test.
 
+The process of having shorter release cycles (sometimes serveral times a day) i.e creating small features and integrating them to the source code, and employing automated build and test processes for quicker feedback is called __Continuous Integration__
+
 __Continuous delivery__ expands on continuous integration by automatically deploying code changes through the support environments, pausing for _approval_ before going to production.
 
 __Continuous deployment__ does not wait for approval; rather, it goes to production automatically after successfully passing through automated testing in the support environments.
