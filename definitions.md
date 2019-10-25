@@ -11,3 +11,15 @@ https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8-beta/ht
 
 ### A firewall is a network security system that monitors and controls the incoming and outgoing network traffic based on predetermined security rules. A firewall typically establishes a barrier between a trusted, secure internal network and another outside network. 
 ### A firewall is a way to protect machines from any unwanted traffic from outside. It enables users to control incoming network traffic on host machines by defining a set of firewall rules. These rules are used to sort the incoming traffic and either block it or allow through. 
+
+## Requirements for microservices
+
+ * Traffic shaping
+ * Routing
+ * Advanced load balancing (including blue-green deployment and A/B testing perposes)
+ * Service discovery
+ * Circuit breaking
+ * Rate limiting
+ * Metrics/monitoring
+ * Logging
+ * Tracing

@@ -1,6 +1,8 @@
 
 
-## TEXT PROCCESING
+# TEXT PROCCESING
+
+## grep
 
 grep - global regular expression print
 
@@ -42,6 +44,8 @@ Find recursive to throuth all files and folders | $ grep -r mysql *
 Find into zip files | $ zgrep -i error /var/log/syslog.2.gz
 Find by regex ```Egrep``` | grep -E
 Find by template | fgrep -f template.txt
+Looking last three lines | tail -n 3 file.log
+word count | `wc` can count the number of bytes, characters, words, or lines
 
 ###### $ ls /sbin/[[:upper:]]* { only begin with Capital letter output - /sbin/NetworkManager /sbin/ModeManager }
 
@@ -60,7 +64,7 @@ Find by template | fgrep -f template.txt
 [:space:] | The whitespace characters including space, tab, carriage return, newline, vertical tab, and form feed. In ASCII, equivalent to:[ \t\r\n\v\f]
 [:upper:] | The uppercase characters.
 
------
+## cat sort
 
 ###### $ cat > foo.txt
 The quick brown fox jumped over the lazy dog 1 .
@@ -73,7 +77,11 @@ The quick brown fox jumped over the lazy dog 1 .
 ###### $ cut -d ':' -f 1,3 /etc/passwd { user name, uid }
 ###### $ cut -d: -f7 < /etc/passwd | sort -u { all no duplicat shells }
 ###### $ echo '1234567890' | cut -c 1-5 { 12345 }
--------
+
+###### $ sort authors.txt | uniq -c > authors-sorted.txt
+
+## diff comm patch
+
 ###### $ comm /ets/shadow /etc/shadow- { compare sorted files by lines }
 -------
 ###### # diff /etc/shadow /etc/shadow- { compare by text }
@@ -85,14 +93,26 @@ The quick brown fox jumped over the lazy dog 1 .
 ###### $ patch < patchfile.txt
 patching file file1.txt
 ###### $ cat file1.txt
-----------
+
+## tr
+
 ###### $ echo "lower" | tr a-z A-Z { translate to LOWER }
 ###### $ tr -d '\r' < файл_dos > файл_unix { dos2unix }
+
+	replace the commas with tabs	
+###### $ grep "20 Jan 2017" jan2017articles.csv | tr ',' '\t' > jan20only.tsv 
+
+## sed awk
+
 ###### $ echo "front" | sed 's/front/back/'
 ###### $ sed -n '/SUSE/p' distros.txt { like grep SUSE distros.txt }
 ###### $ sed -n '/SUSE/!p' distros.txt { !SUSE }
 ###### $ sed -i 's/foo/boo/' foo.txt { -i replace input file}
-------------
+
+###### $ awk -F "\t" '{print $3 "  " $NF}' jan20only.tsv
+
+## fmt pr
+
 ###### $ aspell -H check foo.txt { check spelling }
 ---------------
 ###### echo "The quick brown fox jumped over the lazy dog." | fold -w 10 
@@ -123,8 +143,9 @@ patching file file1.txt
 ###### $ zcat /usr/share/man/man1/bash.1.gz  | groff -mandoc > ~/Desktop/bash.ps  { formatting to PostScript }
 ---------------------
 ###### $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF } 
----------------
-#### Printing
+
+
+## Printing
 
   * pr – Convert text files for printing
   * lpr – Print files
