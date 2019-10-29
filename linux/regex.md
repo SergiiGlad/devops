@@ -88,7 +88,8 @@ The quick brown fox jumped over the lazy dog 1 .
 ###### # diff -c /etc/shadow /etc/shadow- { context format }
 ###### # diff -u /etc/shadow /etc/shadow- { universal compact format }
 -----------
-##### Patching
+### Patching
+
 ###### $ diff -Naur file1.txt file2.txt > patchfile.txt
 ###### $ patch < patchfile.txt
 patching file file1.txt
@@ -104,12 +105,27 @@ patching file file1.txt
 
 ## sed awk
 
-###### $ echo "front" | sed 's/front/back/'
-###### $ sed -n '/SUSE/p' distros.txt { like grep SUSE distros.txt }
-###### $ sed -n '/SUSE/!p' distros.txt { !SUSE }
-###### $ sed -i 's/foo/boo/' foo.txt { -i replace input file}
-###### $ lsblk | sed -n '1!p' { don't print first line, head of table }  
-###### $ awk -F "\t" '{print $3 "  " $NF}' jan20only.tsv
+```echo "front" | sed 's/front/back/'```
+
+```sed -n '/SUSE/p' distros.txt```
+	like grep SUSE distros.txt
+
+```sed -n '/SUSE/!p' distros.txt``` 
+	!SUSE
+
+```sed -i 's/foo/boo/' foo.txt```
+	-i replace input file
+
+```lsblk | sed -n '1!p'```
+	don't print first line, head of table
+
+  
+```awk -F "\t" '{print $3 "  " $NF}' jan20only.tsv```
+
+``` sed -i -e 's/(goodby\|hello\)//g' filename```
+	to delete multiple words
+
+	
 
 ## fmt pr
 

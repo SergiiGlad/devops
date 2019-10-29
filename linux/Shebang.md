@@ -1,5 +1,5 @@
 
-** Shell Scripts
+## Shell Scripts
 
 If __bash__ is invoked with the name __sh__ as an interactive login shell
 it first attempts to read and execute commands from _/etc/profile_ and _~/.profile_ , in that order.
@@ -11,13 +11,16 @@ __Bash__ as an interactive login shell, or as a non-interactive shell with the -
  * ~/.profile
   in  that  order if the files exists
 
+When an interactive shell that is not a login shell is started, 
+bash reads and executes commands from __~/.bashrc,__ if that file exists. 
+
 When a login shell exits, bash reads and executes commands from the files 
  * ~/.bash_logout 
  * /etc/bash.bash_logout 
 if the files exists.
 
 ## FILES
-```/bin/bash``
+```/bin/bash```
    The bash executable
 
 ```/etc/profile```
