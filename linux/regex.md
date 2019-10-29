@@ -108,7 +108,7 @@ patching file file1.txt
 ###### $ sed -n '/SUSE/p' distros.txt { like grep SUSE distros.txt }
 ###### $ sed -n '/SUSE/!p' distros.txt { !SUSE }
 ###### $ sed -i 's/foo/boo/' foo.txt { -i replace input file}
-
+###### $ lsblk | sed -n '1!p' { don't print first line, head of table }  
 ###### $ awk -F "\t" '{print $3 "  " $NF}' jan20only.tsv
 
 ## fmt pr

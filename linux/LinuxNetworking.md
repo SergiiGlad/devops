@@ -77,4 +77,5 @@ Additional resources
 ###### $ nmcli dev wifi { scan all WiFi AP}
 ###### $ nmcli device wifi SSID-Name --ask { wireless-password }
         
-
+###### $ nmcli con add type wifi ifname wl12 con-name MyWIFI ssid $SSID
+###### $ nmcli con up id MyWIFI

@@ -1,6 +1,44 @@
 
 ** Shell Scripts
 
+If __bash__ is invoked with the name __sh__ as an interactive login shell
+it first attempts to read and execute commands from _/etc/profile_ and _~/.profile_ , in that order.
+
+__Bash__ as an interactive login shell, or as a non-interactive shell with the --login option:
+ * /etc/profile  
+ *  ~/.bash_profile 
+ * ~/.bash_login
+ * ~/.profile
+  in  that  order if the files exists
+
+When a login shell exits, bash reads and executes commands from the files 
+ * ~/.bash_logout 
+ * /etc/bash.bash_logout 
+if the files exists.
+
+## FILES
+```/bin/bash``
+   The bash executable
+
+```/etc/profile```
+   The systemwide initialization file, executed for login shells
+
+```/etc/bash.bash_logout```
+   The systemwide login shell cleanup file, executed when a login shell exits
+
+```~/.bash_profile```
+   The personal initialization file, executed for login shells
+
+```~/.bashrc```
+   The individual per-interactive-shell startup file
+
+```~/.bash_logout```
+   The individual login shell cleanup file, executed when a login shell exits
+
+```~/.inputrc```
+   Individual readline initialization file
+
+
 ###### $ export PATH=~/bin:"$PATH" { add new path to $PATH }
 
 The dot (.) command is a synonym for the source command, a shell builtin that reads a
