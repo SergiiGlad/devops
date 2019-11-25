@@ -98,4 +98,19 @@ sar -n TCP,ETCP 1
 top
 ```
 
+## Stress Test CPU and Memory (VM)
+
+###### tload - representation of system load average
+
+```
+stress -c 2 -i 1 -m 1 --vm-bytes 128M -t 10s
+```
+Where:
+ * -c 2 : Spawn two workers spinning on sqrt()
+ * -i 1 : Spawn one worker spinning on sync()
+ * -m 1 : Spawn one worker spinning on malloc()/free()
+ * --vm-bytes 128M : Malloc 128MB per vm worker (default is 256MB)
+ * -t 10s : Timeout after ten seconds
+ * -v : Be verbose
+
 
