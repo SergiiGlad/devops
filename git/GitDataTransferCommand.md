@@ -23,4 +23,8 @@ When a filename is not given and the reference is not a (local) branch — say, 
 
 ###### git log --pretty=oneline
 
+###### git show { git log --pretty=format:"%h %an %ar - %s" }
+
+###### git log --grep="1234"
+
 
