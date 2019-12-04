@@ -1,3 +1,5 @@
+__Remember, HEAD__ is an alias for the last commit-hash of the branch.
+
 ## git checkout
 
 ### The checkout command is used to copy files from the history (or stage) to the working directory, and to optionally switch branches.
@@ -5,23 +7,23 @@
 ###  The command __git checkout__ will replace everything in the working directory to the last committed version.
 
 Use git checkout to clear any changes in the working directory.
-```git checkout .```
+###### git checkout .
 
 copies _file.java_ from the stage to the working directory. If no commit name is given, files are copied from the stage.
-```git checkout file.java``` 
+###### git checkout file.java 
 
 If you want to check out all C source files out of the index. 
-```git checkout '*.c'``` 
+###### git checkout '*.c' 
 
 
 If you have an unfortunate branch that is named hello.c, this step would be confused as an instruction to switch to that branch.
-```git checkout -- hello.c``` 
+###### git checkout -- hello.c 
 
 copies _file.java_ from the commit called HEAD~(the parent of the current commit) commit to the stage and the working directory. Note that the current branch is not changed
-```git checkout HEAD~ file.java``` 
+###### git checkout HEAD~ file.java 
 
  When a filename is not given but the reference is a (local) branch, HEAD is moved to that branch
-```git checkout develop```
+###### git checkout develop
 
 When a filename is not given and the reference is not a (local) branch — say, it is 
  * a tag,
