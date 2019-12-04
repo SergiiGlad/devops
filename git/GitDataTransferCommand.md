@@ -50,6 +50,10 @@ Combine both git reset and git checkout in a single command. The result will be 
 
 ###### git log --grep="1234"
 
+---
+To output the commit information with the differences of what changed you need to include the -p prompt 
+###### git log -p 
+
 ## git diff
 
 ### The git diff command is the simplest to compare what's changed between commits. It will output the differences between the two commits.
