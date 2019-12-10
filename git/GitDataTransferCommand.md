@@ -32,6 +32,8 @@ When a filename is not given and the reference is not a (local) branch — say, 
  * a remote branch, 
  * a SHA-1 ID, 
  * or something like master~3 — we get an anonymous branch, called a detached HEAD. 
+
+###### git checkout master~3
  
  This is useful for jumping around the history. Say you want to compile version 1.6.6.1 of git. You can ```git checkout v1.6.6.1``` (which is a tag, not a branch), switch back to another branch, say ```git checkout master```.
 
