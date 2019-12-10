@@ -9,6 +9,9 @@ __Remember, HEAD__ is an alias for the last commit-hash of the branch.
 Use git checkout to clear any changes in the working directory.
 ###### git checkout .
 ---
+Copies files from the latest commit to both the stage and the working directory
+###### git checkout HEAD -- files
+---
 copies _file.java_ from the stage to the working directory. If no commit name is given, files are copied from the stage.
 ###### git checkout file.java 
 ---
