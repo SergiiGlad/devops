@@ -3,6 +3,8 @@
 What Is DevOps?
 **DevOps** - is the practice of operations and development engineers participating together through the entire service lifecycle; from the design and development process all the way to production support. DevOps is also characterized by operations staff making use of many of the same techniques as developers for their systems work. https://theagileadmin.com/what-is-devops/
 
+__DevOps__ is a software development practice which blends software development (Dev) with the IT operations (Ops) making the whole development lifecycle simpler and shorter by constantly delivering builds, fixes, updates, and features.
+
 
 #### Kaizen’s Guiding Principles
 
