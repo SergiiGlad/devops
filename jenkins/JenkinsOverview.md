@@ -16,6 +16,8 @@ Let's start by talking about the foundations. Jenkins and its plugins make the b
 
 When Jenkins started evolving toward the pipeline-as-code model, some of the earliest changes came in the form of a plugin—the workflow plugin. This included the creation of a set of initial DSL steps that allowed for coding up simple jobs in Jenkins and, by extension, simple pipelines.
 
+A single task. Fundamentally, a step tells Jenkins what to do at a particular point in time (or "step" in the process). For example, to execute the shell command make use the sh step: sh 'make'. When a plugin extends the Pipeline DSL, [1] that typically means the plugin has implemented a new step.
+
 ## Scripted Pipelines
 
 The original approach for creating pipelines in Jenkins 2 is now referred to as scripted. At the highest level, Scripted Pipelines are wrapped in a node block. Here a __node__ refers to a system that contains the Jenkins agent pieces and can run jobs (formerly referred to as a slave instance).
@@ -25,6 +27,8 @@ The node gets mapped to a system by using a __label__. A label is simply an iden
 ## Stages
 
 Although this simple node block is technically valid syntax, Jenkins pipelines generally have a further level of granularity—stages. A stage is a way to divide up the pipeline into logical functional units. It also serves to group DSL steps and Groovy code together to do targeted functionality. 
+
+A stage block defines a conceptually distinct subset of tasks performed through the entire Pipeline (e.g. "Build", "Test" and "Deploy" stages), which is used by many plugins to visualize or present Jenkins Pipeline status/progress. [6]
 
 Each stage in a pipeline also gets its own output area in the new default Jenkins output screen—the __Stage View__. 
 
