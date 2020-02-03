@@ -122,31 +122,6 @@ patching file file1.txt
 	``` sed -i -e 's/(goodby\|hello\)//g' filename```
 		to delete multiple words
 
-## AWK		
-
-technically, AWK was created before both python and bash
-
-print command for each line in file
-```
-awk '{print}' /etc/password
-```
-// the same thing  
-```
-awk '{ print $0 }' /etc/password 
-```
-Multiple fields
--F as the field separator
-__default FS__ is set to a single space character, which awk interprets to mean
-"one or more spaces or tabs"
-```
-awk -F":" '{print $1 $3}' /etc/passwd
-```
-
-```awk -F "\t" '{print $3 "  " $NF}' jan20only.tsv```
-
-
-
-
 
 ## fmt pr
 
