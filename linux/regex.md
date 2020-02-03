@@ -126,16 +126,21 @@ patching file file1.txt
 
 technically, AWK was created before both python and bash
 
-###### awk '{print}' /etc/password // print command for each line in file
-###### awk '{ print $0 }' /etc/password // the same thing  
-
+print command for each line in file
+```
+awk '{print}' /etc/password
+```
+// the same thing  
+```
+awk '{ print $0 }' /etc/password 
+```
 Multiple fields
 -F as the field separator
 __default FS__ is set to a single space character, which awk interprets to mean
 "one or more spaces or tabs"
-
-###### awk -F":" '{print $1 $3}' // with field separator
-
+```
+awk -F":" '{print $1 $3}' /etc/passwd
+```
 
 ```awk -F "\t" '{print $3 "  " $NF}' jan20only.tsv```
 
