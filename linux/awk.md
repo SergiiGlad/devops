@@ -7,7 +7,7 @@ It is a great language.
 Awk is geared toward text processing and report generation, yet features many well-designed features that allow for serious programming.
 
 Examples:
-	#### gawk '{ sum += $1 }; END { print sum }' file
+#### gawk '{ sum += $1 }; END { print sum }' file
 
 
 print command for each line in file
