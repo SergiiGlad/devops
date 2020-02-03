@@ -100,17 +100,17 @@ patching file file1.txt
 ###### $ echo "lower" | tr a-z A-Z { translate to LOWER }
 ###### $ tr -d '\r' < файл_dos > файл_unix { dos2unix }
 
-	replace the commas with tabs	
-###### $ grep "20 Jan 2017" jan2017articles.csv | tr ',' '\t' > jan20only.tsv 
+	replace the commas with tabs
+###### $ grep "20 Jan 2017" jan2017articles.csv | tr ',' '\t' > jan20only.tsv
 
-## sed awk
+## sed
 
 ```echo "front" | sed 's/front/back/'```
 
 ```sed -n '/SUSE/p' distros.txt```
 	like grep SUSE distros.txt
 
-```sed -n '/SUSE/!p' distros.txt``` 
+```sed -n '/SUSE/!p' distros.txt```
 	!SUSE
 
 ```sed -i 's/foo/boo/' foo.txt```
@@ -119,21 +119,37 @@ patching file file1.txt
 ```lsblk | sed -n '1!p'```
 	don't print first line, head of table
 
-  
+	``` sed -i -e 's/(goodby\|hello\)//g' filename```
+		to delete multiple words
+
+## AWK		
+
+technically, AWK was created before both python and bash
+
+###### awk '{print}' /etc/password // print command for each line in file
+###### awk '{ print $0 }' /etc/password // the same thing  
+
+Multiple fields
+-F as the field separator
+__default FS__ is set to a single space character, which awk interprets to mean
+"one or more spaces or tabs"
+
+###### awk -F":" '{print $1 $3}' // with field separator
+
+
 ```awk -F "\t" '{print $3 "  " $NF}' jan20only.tsv```
 
-``` sed -i -e 's/(goodby\|hello\)//g' filename```
-	to delete multiple words
 
-	
+
+
 
 ## fmt pr
 
 ###### $ aspell -H check foo.txt { check spelling }
 ---------------
-###### echo "The quick brown fox jumped over the lazy dog." | fold -w 10 
-	The quick 
-	brown fox 
+###### echo "The quick brown fox jumped over the lazy dog." | fold -w 10
+	The quick
+	brown fox
 	jumped ove
 	r the lazy
 	 dog.
@@ -158,7 +174,7 @@ patching file file1.txt
 --------------------
 ###### $ zcat /usr/share/man/man1/bash.1.gz  | groff -mandoc > ~/Desktop/bash.ps  { formatting to PostScript }
 ---------------------
-###### $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF } 
+###### $ ps2pdf ~/Desktop/foo.ps ~/Desktop/ls.pdf { convert to PDF }
 
 
 ## Printing
@@ -176,8 +192,3 @@ agement, and the second, Ghostscript, a PostScript interpreter, acts as a RIP.
 
 ###### $ lpstat -s { info about printers }
 ###### $ lpq { maintaining print queues }
-
-
-
-
-
