@@ -71,11 +71,11 @@ grep -rnw `pwd` -e "pattern"
 
 ## History command
 
-###### # sudo !! { repeate last command with sudo }
+###### $ sudo !! { repeate last command with sudo }
 
-###### # ^htp^http { edit last command }
+###### $ ^htp^http { edit last command }
 
-###### # !8 { duplicate command 8 }
+###### $ !8 { duplicate command 8 }
 
-###### # export HISTCONTROL=erasedups:ignorespace
+###### $ export HISTCONTROL=erasedups:ignorespace
 
