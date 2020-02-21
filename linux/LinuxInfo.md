@@ -68,3 +68,14 @@
 ## Use pwd to search from any directory you are in, recursing downward
 
 grep -rnw `pwd` -e "pattern"
+
+## History command
+
+###### # sudo !! { repeate last command with sudo }
+
+###### # ^htp^http { edit last command }
+
+###### # !8 { duplicate command 8 }
+
+###### # export HISTCONTROL=erasedups:ignorespace
+
