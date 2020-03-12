@@ -5,3 +5,17 @@ A framework provided by the Linux kernel that allows customization of networking
 ## Issues with IPTables as a load balancer
 * Latency to access service (routing latency)
 * Latency to add/remove rules
+## IPTables Example
+
+###### # iptables -t nat -L -n
+
+## What is IP Virtual Server (IPVS)?
+
+* Transport layer load balancer which directs requests for TCP and UDP based services to real servers.
+* Part of the Linux Virtual Server (LVS) project.
+* As with IPTables, IPVS is built on top of Netfilter.
+* Supports 3 load balancing modes: 
+  - NAT
+  - DR (L2 load balancing via MAC rewriting)
+  - IP Tunneling
+
