@@ -1,3 +1,5 @@
+https://12factor.net/uk/
+
 1. __Codebase__: Manage all code in version control systems (like Git or
 Mercurial). The codebase comprehensively dictates what is deployed.
 2. __Dependencies__: Dependencies should be managed entirely and
