@@ -8,3 +8,12 @@ For ELK stack, there are several agents that can do this job including
 * Filebeat 
 * Logstash
 * fluentd
+
+## ElascticSearch
+
+* Scalable
+* Real-time
+* Highly avaliable
+* Developer-friendly
+* Versatile storage
+* Query & aggregations
