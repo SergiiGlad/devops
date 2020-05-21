@@ -2,6 +2,20 @@
 
 # TEXT PROCCESING
 
+_I use technology to make the world more open._
+# 10 command-line tools for data analysis in Linux
+
+* head and tail 
+* wc
+* grep 
+* tr
+* sort
+* sed
+* cut 
+* uniq 
+* awk 
+
+
 ## grep
 
 grep - global regular expression print
