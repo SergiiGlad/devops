@@ -16,7 +16,7 @@ The four commands above copy files between the working directory, the stage (als
  *   ```git commit -a``` is equivalent to running git add on all filenames that existed in the latest commit, and then running git commit.
  *   ```git commit files``` creates a new commit containing the contents of the latest commit, plus a snapshot of files taken from the working directory. Additionally, files are copied to the stage.
  *   ```git checkout HEAD -- files``` copies files from the latest commit to both the stage and the working directory.
-
+ *   ```git log --all --graph --decorate```
 ## diff
 
 ###### $ git diff
