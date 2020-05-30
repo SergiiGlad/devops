@@ -27,6 +27,8 @@ Having multiple copies of the code samples on your computer can cause confusion 
 
 ###### $ git clone https://github.com/CiscoDevNet/dne-security-code
 
+##### git log --all --graph --decorate --oneline
+
 ###### $ git log *{ now have locally on your computer all of the files that have ever been committed to the repository }*
 
 You can verify what branch you are working on, and the current status of your working tree with the git status command:
@@ -144,6 +146,9 @@ Next, checkout your feature branch, and execute git stash pop. This will take th
 #### Tidying Things
 
 *  git commit --amend - add your staged changes to the most recent commit. If nothing is staged just commit message
+
+##### git push <remote> <lcoal branch>:<remote branch>
+##### git branch --set-upstream-to=origin/master
 
 *  git push my_remote --tags - Send all local tags to the remote repo. Good for versioning changes.
 
