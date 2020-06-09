@@ -76,6 +76,13 @@ Infrastructure AS Code
 
 ## Reliability Engineering
 
+ Book
+[Site Reliability Engineer](http://shop.oreilly.com/product/0636920041528.do)
+
+#### What is SRE (site reliability engineering) ?
+
+https://www.redhat.com/en/topics/devops/what-is-sre?utm_medium=Email&utm_campaign=weekly&sc_cid=7013a000002gUYhAAM
+
 **Engineering Doesn't End With Deployment**
 
 #### Operate For Design: Metrics and Monitoring
