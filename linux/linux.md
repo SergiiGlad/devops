@@ -256,7 +256,11 @@ https://static-course-assets.s3.amazonaws.com/CyberEss/ru/course/files/5.1.2.4%2
 ###### $ wget https://mirrors.edge.kernel.org/openwall/wordlists/passwords/password.gz
 ###### $ john --wordlist=password --rules mypass --format=crypt
 
+### Generate PSK
 
+```
+head -c 24 /dev/urandom | base64
+```
 
 
 
