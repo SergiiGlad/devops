@@ -29,7 +29,42 @@ The principle of least privilege is very important in managing.
 This principle says that each user should have only those privileges needed to do their jobs.
 
 There are four ways to interact with GCP's management layer: 
-* through the web-based console, 
-* through the SDK and its command-line tools, 
-* through the APIs, 
-* through a mobile app.
+* through the cloud platform console - web user interface ( gcloud, gsutil Cloud Storage, bq BigQuery )
+* through the SDK or Cloud shell - its command-line tools
+* through the APIs - RESTful base API , JSON as interchange format , OAuth 2.0
+* through a mobile app - Android or iOS
+
+__An IAM policy__ has a "who" (identity), a "can do what" part (access), and an "on which resource" part. The "who" part names the user or users you're talking about.
+who - google account, google group, service account, an entire GSuite or a Cloud Identity domain;
+
+__An IAM policy__ is a collection of users and their roles.
+
+can do what - part is defined by an IAM role;
+#### There are three kinds of roles in Cloud IAM:
+##### IAM primitive roles - apply across all GCP services in a project
+ * owner
+ * editor
+ * viewer
+ * billing administrator
+_Be careful, if you have several people working together on a project that contains sensitive data, primitive roles are probably too coarse_
+
+#### IAM predefined roles apply to a particular GCP service ina project
+Compute Engines InstanceAdmin Role
+Some companies decide they'd rather stick with the predefined roles. 
+
+#### Custom
+A lot of companies have a least-privileged model in which each person in your organization has the minimum amount of privilege needed to do his or her job.
+Сustom roles can only be used at the project or organization levels. They can't be used at the folder level. 
+
+
+What if you want to give permissions to a Compute Engine virtual machine, rather than to a person? 
+__Then you would use a service account.__
+
+
+
+
+
+
+Granting, changing and revoking access to resources
+
+Treat your configuration as code and perform repeatable deployments.
