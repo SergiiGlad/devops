@@ -1,7 +1,7 @@
 
 # Virtualization
 
-## Type 1 Hypervisors ( bare metal) 
+## Type 1 Hypervisors ( bare metal ) 
  
 #### Hypervisor runs directly on the physical hardware of the host machine and has direct access to the underlying hardware. It is considered to be best performing and most efficient for enterprise computing.
  
