@@ -114,3 +114,7 @@ Where:
  * -v : Be verbose
 
 
+## Create a CPU load
+
+```dd if=/dev/urandom | gzip -9 >> /dev/null &```
+

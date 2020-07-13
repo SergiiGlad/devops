@@ -26,3 +26,12 @@ Sandbox constrains:
 
 Your application runs inside Docker containers on Google Compute Engine Virtual Machines, VMs.
 App Engine manages these Compute Engine machines for you.
+
+## Achieve continuous deployment to Google Kubernetes Engine (GKE) with Cloud Build
+
+Make sure that the following APIs are enabled in the Google Cloud Console:
+
+GKE API
+Container Registry API
+Cloud Build API
+Cloud Source Repositories API

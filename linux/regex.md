@@ -121,20 +121,24 @@ patching file file1.txt
 
 ```echo "front" | sed 's/front/back/'```
 
+like grep SUSE distros.txt
 ```sed -n '/SUSE/p' distros.txt```
-	like grep SUSE distros.txt
 
+!SUSE	
 ```sed -n '/SUSE/!p' distros.txt```
-	!SUSE
-
-```sed -i 's/foo/boo/' foo.txt```
+	
 	-i replace input file
+```sed -i 's/foo/boo/' foo.txt```
 
+don't print first line, head of table
 ```lsblk | sed -n '1!p'```
-	don't print first line, head of table
+	
+to delete multiple words
+``` sed -i -e 's/(goodby\|hello\)//g' filename```
 
-	``` sed -i -e 's/(goodby\|hello\)//g' filename```
-		to delete multiple words
+to substitude ProjectId
+``` sed -i -e 's/PROJECT_ID/'$DEVSHELL_PROJECT_ID/ deploy.yaml```
+		
 
 
 ## fmt pr

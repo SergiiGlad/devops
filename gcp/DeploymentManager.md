@@ -34,6 +34,10 @@ gcloud services list --available
 
 gcloud beta billing accounts list
 
+gcloud beta deployment-manager type-providers describe pubsub-v1 --project gcp-types
+
+gcloud beta deployment-manager types list --provider compute-v1 --project gcp-types
+
 ```
 
 ## Deployment Manager Infrastructure CodeLab
