@@ -58,6 +58,12 @@
 ###### `# cat /proc/net/fib_trie`  { show ip address }
 ###### `# cat /proc/net/route` { show ip table }
 ###### `# lsof -i` { show all TCP/IP socket } 
+CHECK FOR OPENS PORT 
+echo > /dev/tcp/<server ip>/<port>
+
+```
+echo > /dev/tcp/localhost/22
+```
 ---
 ###### $ sudo netstat -tnlp { list ports }
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
@@ -75,6 +81,7 @@
 
 ###### $ ss { similar netstat socket stat }
 ###### # iptables -L
+
 ##
 ###### $ cat /proc/cpuinfo
 ###### $ lscpu
