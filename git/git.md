@@ -72,6 +72,17 @@ Local
 ## Creation and cloning repository
 ![alt text](images/clone.png)
 
+## Status monitoring
+![alt text](images/status.png)
+
+## Status marks
+![alt text](images/status_marks.png)
+
+## Log
+![alt text](images/log.png)
+
+
+
 
 
 
