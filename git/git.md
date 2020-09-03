@@ -32,30 +32,30 @@ Versions
   * Generate change log
 
 ## Type SCM 
-  * Centralized - CVS, Subversion(SVN) ,Perforce
+### Centralized - CVS, Subversion(SVN) ,Perforce
     * PROS 
       * Anyone can always check from some point whar everyone else on the project is doing 
       * Faster and easier to prepare to marge changes with mainline
     * CONS
     * single point of failure   
-  * Local - small local database 
+### Local - small local database 
     * PROS
       * Very fast and easy to start system
       * Lot of tools that can create such db 
     * CONS
       * Risk to lose all your latest data
       * You need to copy manually all changes into other working PC    
-  * Distributed - GIT, Mercurial, Bazaar
+### Distributed - GIT, Mercurial, Bazaar
     * PROS 
        * Each client has local backup of repository with all history
        * You can work locally  with local repository
        * Anyone can colloborate 
 
 ## Configuration
+System  
+Global  
+Local  
 
-System 
-Global 
-Local 
 ![alt text](images/configuration1.png)
 ![alt text](images/configuration2.png)
 
