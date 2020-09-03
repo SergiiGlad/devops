@@ -66,5 +66,8 @@ Local
 ![alt text](images/setup1.png)
 ![alt text](images/setup2.png)
 
+## Push default behavior
+![alt text](images/push.png)
+
 
 
