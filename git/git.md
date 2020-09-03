@@ -53,10 +53,10 @@ Versions
 
 ## Configuration
 
-System
-Global
-Local
-![alt text](configuration1.png)
-![alt text](configuration2.png)
-![alt text](configuration3.png)
+System 
+Global 
+Local 
+![alt text](images/configuration1.png)
+![alt text](images/configuration2.png)
+
 
