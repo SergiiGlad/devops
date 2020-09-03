@@ -60,11 +60,6 @@ A lot of companies have a least-privileged model in which each person in your or
 What if you want to give permissions to a Compute Engine virtual machine, rather than to a person? 
 __Then you would use a service account.__
 
-
-
-
-
-
 Granting, changing and revoking access to resources
 
 Treat your configuration as code and perform repeatable deployments.

@@ -24,3 +24,14 @@ __Cloud CDN (Content Delivery Network)__
 
 * Use Google's globally distributed edge caches to cache content close to your users
 
+## Shared VPC
+
+When you use Shared VPC, you __designate a project__ as a host project and attach one or more other __service projects__ to it. 
+
+The VPC networks in the host project are called __Shared VPC networks__.
+
+__Shared VPC__ lets organization administrators delegate administrative responsibilities, such as creating and managing instances, to Service Project Admins while maintaining centralized control over network resources like subnets, routes, and firewalls. 
+
+Shared VPC is also referred to as "XPN" in the API.
+
+
