@@ -69,5 +69,9 @@ Local
 ## Push default behavior
 ![alt text](images/push.png)
 
+## Creation and cloning repository
+![alt text](images/clone.png)
+
+
 
 
