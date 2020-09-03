@@ -59,4 +59,12 @@ Local
 ![alt text](images/configuration1.png)
 ![alt text](images/configuration2.png)
 
+## Identity
+![alt text](images/identity.png)
+
+## Setup
+![alt text](images/setup1.png)
+![alt text](images/setup2.png)
+
+
 
