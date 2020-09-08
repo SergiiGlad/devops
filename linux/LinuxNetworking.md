@@ -79,3 +79,8 @@ Additional resources
         
 ###### $ nmcli con add type wifi ifname wl12 con-name MyWIFI ssid $SSID
 ###### $ nmcli con up id MyWIFI
+
+## TRACEROUTE
+```
+mtr g.co
+```

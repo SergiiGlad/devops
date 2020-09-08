@@ -19,6 +19,24 @@ net.ipv4.ip_forward=1
 net.ipv4.conf.default.forwarding=1
 net.ipv4.cong.all.forwarding=1
 
+```
+iptables -A FORWARD -i eth0 -o eth1 -s 192.168.10.0/24 -m conntrack --ctstate NEW -j ACCEPT
+
+iptables -A FORWARD -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+
+iptables -A POSTROUTING -t nat -j MASQUERADE
+```
+
+Save IPTABLES
+```
+iptables-save > /etc/iptables.up.rules
+```
+
+Add iptables configuration auto then machine start
+__EDIT__ /etc/network/interfaces
+...
+pre-up iptables-restore < /etc/iptables.up.rules
+
 ## What is IP Virtual Server (IPVS)?
 
 * Transport layer load balancer which directs requests for TCP and UDP based services to real servers.
