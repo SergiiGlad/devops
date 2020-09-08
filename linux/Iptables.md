@@ -6,8 +6,18 @@ A framework provided by the Linux kernel that allows customization of networking
 * Latency to access service (routing latency)
 * Latency to add/remove rules
 ## IPTables Example
+```
+iptables -t nat -L -n
+```
 
-###### # iptables -t nat -L -n
+Enable ip forwarding
+```
+vi /etc/sysctl.conf
+```
+__Edit__ /etc/sysctl.conf
+net.ipv4.ip_forward=1
+net.ipv4.conf.default.forwarding=1
+net.ipv4.cong.all.forwarding=1
 
 ## What is IP Virtual Server (IPVS)?
 
