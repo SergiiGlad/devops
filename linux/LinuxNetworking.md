@@ -3,21 +3,21 @@
 Using certain kernel tunables through the sysctl utility, you can adjust network configuration on a running system and directly affect the networking performance.
 For permanent changes that persist across system restarts, add lines to the /etc/sysctl.conf file. 
 
-To change network settings, use the sysctl commands. ```sysctl -a```
+```sysctl -a``` To change network settings, use the sysctl commands. 
 
 ### ncat utility , replace netcat
 
-###### $ ncat -l 8080 > outputfile { Set a client machine to listen for connections on TCP port 8080 }
-###### $ ncat -l 10.0.11.60 8080 < inputfile { On a server machine, specify the IP address of the client, the port and the file which is to be transferred }
+```ncat -l 8080 > outputfile```  Set a client machine to listen for connections on TCP port 8080 
+```ncat -l 10.0.11.60 8080 < inputfile``` On a server machine, specify the IP address of the client, the port and the file which is to be transferred 
 
-#### Creating an HTTP proxy server
+### Creating an HTTP proxy server
 
-###### $  ncat -l --proxy-type http localhost 8080
+```ncat -l --proxy-type http localhost 8080```
 
-#### Measurements of the maximum achivable bandwidth on IP networks
+### Measurements of the maximum achivable bandwidth on IP networks
 
-__host1__ `$ iperf -s -u`
-__host2__ `$ iperf -c IPADRESS -u`
+__host1__ ```$ iperf -s -u```
+__host2__ ```$ iperf -c IPADRESS -u```
 
 ### Linux Network Manager
 
