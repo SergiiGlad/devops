@@ -147,9 +147,14 @@ Next, checkout your feature branch, and execute git stash pop. This will take th
 
 *  git commit --amend - add your staged changes to the most recent commit. If nothing is staged just commit message
 
-##### git push <remote> <lcoal branch>:<remote branch>
-##### git branch --set-upstream-to=origin/master
+```git push <remote> <lcoal branch>:<remote branch>```
+```git branch --set-upstream-to=origin/master```
 
+Remove last commit from remote git repository
+
+```git push origin +master^1:master``` 
+
+### Tag
 *  git push my_remote --tags - Send all local tags to the remote repo. Good for versioning changes.
 
 #### Change Default Editor
