@@ -1,12 +1,9 @@
 # Linux Networking
 
-Using certain kernel tunables through the sysctl utility, you can adjust network configuration on a running system and directly affect the networking performance.
-For permanent changes that persist across system restarts, add lines to the /etc/sysctl.conf file. 
+__Using certain kernel tunables through the sysctl utility, you can adjust network configuration on a running system and directly affect the networking performance. For permanent changes that persist across system restarts, add lines to the /etc/sysctl.conf file. __
 
 __To change network settings, use the sysctl commands__
-```bash
-sysctl -a
-``` 
+```sysctl -a``` 
 
 ### ncat utility , replace netcat
 
