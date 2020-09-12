@@ -10,8 +10,10 @@ sysctl -a
 
 ### ncat utility , replace netcat
 
-```ncat -l 8080 > outputfile```  Set a client machine to listen for connections on TCP port 8080 
-```ncat -l 10.0.11.60 8080 < inputfile``` On a server machine, specify the IP address of the client, the port and the file which is to be transferred 
+Set a client machine to listen for connections on TCP port 8080  
+```ncat -l 8080 > outputfile```  
+On a server machine, specify the IP address of the client, the port and the file which is to be transferred   
+```ncat -l 10.0.11.60 8080 < inputfile``` 
 
 ### Creating an HTTP proxy server
 
