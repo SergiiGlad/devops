@@ -5,6 +5,8 @@ What Is DevOps?
 
 __DevOps__ is a software development practice which blends software development (Dev) with the IT operations (Ops) making the whole development lifecycle simpler and shorter by constantly delivering builds, fixes, updates, and features.
 
+(google)  __DevOps__ is an organizational and cultural movement that aims to increase software delivery velocity, improve service reliability, and build shared ownership among software stakeholders.
+
 
 #### Kaizen’s Guiding Principles
 
