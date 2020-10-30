@@ -71,17 +71,17 @@ git branch -d newbranch
 ```
 ## Commintting
 
-![alt text](committing.png)
+![alt text](images/committing.png)
 
 ## Tagging
 
  * lightweight
  * annotated tags
 
- ![alt text](tagging1.png)
+ ![alt text](images/tagging1.png)
 
- ![alt text](tagging2.png)
+ ![alt text](images/tagging2.png)
 
  ## Lead the way
 
- ![alt text](checkout.png)
+ ![alt text](images/checkout.png)
