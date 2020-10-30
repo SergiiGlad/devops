@@ -70,24 +70,24 @@ git branch newbranch 07e5q56
 git branch -d newbranch
 ```
  __origin/master__  
-```$ git branch -r //remote branches``` 
+```$ git branch -r //remote branches```   
  __master__   
-```$ git branch //local branches```
+```$ git branch //local branches```  
 __remotes/origin/master__   
-```$ git branch --all //all branches```  
+```$ git branch --all //all branches```   
  
 __Create branch from start point. Head by default__  
 ```$ git branch <name> <start_point>```
 
-Recreate branch with new start point if branch exists  
+__Recreate branch with new start point if branch exists__
 ```$ git branch --force <name> <start_point>```
  
-If start_point is remote branch like  
+__If start_point is remote branch like__
 ```$ git branch next origin/next```
 Git sets origin/next as a remote branch
 
-In case You create branch ...  
-```$ git branch mmm```
+__In case You create branch ...__  
+```$ git branch mmm```  
 and want to add upstream to it  
 ```$ git branch mmm --set-upstream-to=origin/pyramid```
  And  
