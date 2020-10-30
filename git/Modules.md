@@ -78,10 +78,12 @@ git branch -d newbranch
  * lightweight
  * annotated tags
 
- ![alt text](images/tagging1.png)
+Tagging
+![alt text](images/tagging1.png)
 
- ![alt text](images/tagging2.png)
+Command
+![alt text](images/tagging2.png)
 
  ## Lead the way
-
- ![alt text](images/checkout.png)
+Commiting
+![alt text](images/checkout.png)
