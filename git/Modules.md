@@ -146,9 +146,9 @@ __Creates lightweight tag__
 >>$ git tag -a version-3.0 -m "Version 3.0. Contains next features:"  
 
 __Creates annotated tag with message and add some more information to it.__  
->>$ git tag
-version-2.1
-version-3.0
+>>$ git tag  
+version-2.1  
+version-3.0  
 
 __Shows tags__
 To see the difference between lightweight and annotated tags print information about tag  
