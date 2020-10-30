@@ -44,3 +44,44 @@ __Bare repo, is a repo that contains only objects that never unpacked. Basically
 git clone git@url.com:user/repo --bare
 ```
 __Will clone objects but never unpack it into working directory. From the other hand it allows you to clone from this directory and pushed into it. E.g. If you clone .git directory of existing project you can’t push into it by default.__
+
+## Modules 3
+
+### Branching: manual
+
+
+List, create or delete branches
+![alt text](images/branching.png)
+```bash
+git branch
+
+git branch --remotes/-r
+
+git branch --all/-a
+
+git branch --list/-l *sql*
+
+git branch --contains 07e5q56
+
+git branch newbranch
+
+git branch newbranch 07e5q56
+
+git branch -d newbranch
+```
+## Commintting
+
+![alt text](committing.png)
+
+## Tagging
+
+ * lightweight
+ * annotated tags
+
+ ![alt text](tagging1.png)
+
+ ![alt text](tagging2.png)
+
+ ## Lead the way
+
+ ![alt text](checkout.png)
