@@ -69,12 +69,14 @@ git branch newbranch 07e5q56
 
 git branch -d newbranch
 ```
-
-```$ git branch -r //remote branches```  __origin/master__
-```$ git branch //local branches``` __master__   
-```$ git branch --all //all branches``` __remotes/origin/master__    
+ __origin/master__  
+```$ git branch -r //remote branches``` 
+ __master__   
+```$ git branch //local branches```
+__remotes/origin/master__   
+```$ git branch --all //all branches```  
  
-Create branch from start point. Head by default  
+__Create branch from start point. Head by default__  
 ```$ git branch <name> <start_point>```
 
 Recreate branch with new start point if branch exists  
