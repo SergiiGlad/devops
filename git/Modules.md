@@ -107,21 +107,18 @@ __Will recreate previous commit. You can use this command to change message or a
 
 __!!!WARNING don’t try to amend already pushed commit unless You know what you’re doing.__
 If you have a commit
->>git status -sb
-## pdf_view...origin/pdf_view
->>git log -1
+>>git status -sb  
+#### pdf_view...origin/pdf_view
+>>git log -1  
 commit 93c4f5916478fe9985b2cf5c33b6f09bdafb446f
 Author: Sasha <email@cocom.com>
 Date:   Fri Jan 20 21:15:15 2017 +0200
 
-Adding content service
->>echo “.proj” >> .gitignore
->>git add .gitignore
->>git add commit --amend
->>git status -sb
-## pdf_view...origin/pdf_view [ahead 1, behind 1]
-It means server contains commit you don’t (just removed it) and doesn’t have your one (created from old).
-DON’T  >>git pull 
+Adding content service  
+>>echo “.proj” >> .gitignore  
+>>git add .gitignore  
+>>git add commit --amend  
+DON’T  >>git pull  
 In this case, never. It will merge and create two commits old and new one. In such cases, in case this branch is yours push with force param. If it’s common branch don’t use amend, just create new commit.
 
 ## Tagging
