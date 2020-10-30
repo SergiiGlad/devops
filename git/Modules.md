@@ -108,13 +108,12 @@ __Will recreate previous commit. You can use this command to change message or a
 __!!!WARNING don’t try to amend already pushed commit unless You know what you’re doing.__
 If you have a commit  
 >>git status -sb  
-#### pdf_view...origin/pdf_view
+pdf_view...origin/pdf_view
 
 >>git log -1  
-
-#### commit 93c4f5916478fe9985b2cf5c33b6f09bdafb446f
-#### Author: Sasha <email@cocom.com>
-#### Date:   Fri Jan 20 21:15:15 2017 +0200
+commit 93c4f5916478fe9985b2cf5c33b6f09bdafb446f
+Author: Sasha <email@cocom.com>
+Date:   Fri Jan 20 21:15:15 2017 +0200
 
 Adding content service  
 >>echo “.proj” >> .gitignore  
