@@ -107,20 +107,20 @@ __Will recreate previous commit. You can use this command to change message or a
 
 __!!!WARNING don’t try to amend already pushed commit unless You know what you’re doing.__
 If you have a commit  
->>git status -sb  
+>>$ git status -sb  
 pdf_view...origin/pdf_view
 
->>git log -1  
+>>$ git log -1  
 commit 93c4f5916478fe9985b2cf5c33b6f09bdafb446f  
 Author: Sasha <email@cocom.com>  
 Date:   Fri Jan 20 21:15:15 2017 +0200  
 
 Adding content service  
->>echo “.proj” >> .gitignore  
->>git add .gitignore  
->>git add commit --amend  
+>>$ echo “.proj” >> .gitignore  
+>>$ git add .gitignore  
+>>$ git add commit --amend  
 
-DON’T  >>git pull  
+DON’T  >>$ git pull  
 
 In this case, never. It will merge and create two commits old and new one. In such cases, in case this branch is yours push with force param. If it’s common branch don’t use amend, just create new commit.
 
@@ -140,19 +140,19 @@ Commiting
 ![alt text](images/checkout.png)
 
 __Git tag__ 
->>git tag version-2.1  
+>>$ git tag version-2.1  
 
 __Creates lightweight tag__  
->>git tag -a version-3.0 -m "Version 3.0. Contains next features:"  
+>>$ git tag -a version-3.0 -m "Version 3.0. Contains next features:"  
 
 __Creates annotated tag with message and add some more information to it.__  
->>git tag
+>>$ git tag
 version-2.1
 version-3.0
 
 __Shows tags__
 To see the difference between lightweight and annotated tags print information about tag  
->>git show version-2.1  
+>>$ git show version-2.1  
 commit 93c4f5916478fe9985b2cf5c33b6f09bdafb446f  
 Author: Sasha <email@cocom.com>  
 Date:   Fri Jan 20 21:15:15 2017 +0200  
@@ -160,17 +160,14 @@ Date:   Fri Jan 20 21:15:15 2017 +0200
 Adding content service  
 ...  
 But  
->>git show version-3.0  
+>>$ git show version-3.0  
 tag version-3.0  
 Tagger: Sasha <email@cocom.com>  
 Date:   Fri Jan 20 21:20:23 2017 +0200  
-
 Version 3.0. Contains next features:  
-
 commit 4b19cc4781342ff616b0b6ccc2ad49f51ea822c8  
 Author: Sasha <email@cocom.com>  
 Date:   Fri Jan 20 21:15:15 2017 +0200  
-
 Adding content service to work with boilerplate templates
 So annotated tag saves additional and very useful information.
 
