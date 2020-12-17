@@ -9,6 +9,15 @@ _DevOps is the union of people, processes and products to enable continuous deli
 
 * It is also the combination of Design, Development, Operations, and Testing through the implementation of automated pipelines that enable an environment of collaboration and continuous creation.
 
+DevOps Principles (IBM Developer)
+
+* Process improvement initiatives
+* Continual experimentation
+* Learners becoming teachers
+* Using DevOps automation to improve efficiency
+* Giving continuous feedback to the entire organization
+* Incentivizing development, test, and deployment teams to collaborate on shared goals
+
 
 
 # How To Become a DevOps Engineer 
