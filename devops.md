@@ -1,6 +1,15 @@
 _DevOps is the union of people, processes and products to enable continuous delivery of value to end users."_
                                                                                      - _Donovan Brown_ -
 
+## What is DevOps? (IBM Developer)
+
+* DevOps is a software development approahc for Development and Operations teams (Dev and Ops) which allows the teams to deliver innovative new applications faster and at a loswer cost with just the right features;
+
+* It is a methodology that promotes colllaboration to build, test, and deploy products rapidly with an emphasis on quality;
+
+* It is also the combination of Design, Development, Operations, and Testing through the implementation of automated pipelines that enable an environment of collaboration and continuous creation.
+
+
 
 # How To Become a DevOps Engineer 
 
