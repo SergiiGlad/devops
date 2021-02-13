@@ -44,3 +44,8 @@ __Cloud SQL__ is a managed RDBMS
 __Cloud Spanner__
 
 * It offers transactional consistency at a global scale, schemas, SQL, and automatic synchronous replication for high availability
+
+IAM get policy
+```
+gsutil iam get gs://example > bucket_iam.txt
+```
