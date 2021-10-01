@@ -83,6 +83,11 @@ A rebase is an alternative to a merge for combining multiple branches. Whereas a
 
 ###### $ git rebase --onto master 2c335 { to limit how far back to go, use the --onto option } 
 
+##### Squash commints
+Check difference from branch __dev__
+###### git cherry -v dev | wc -l
+Rebase
+###### git rebase -i HEAD~60
 
 ## Technical Notes
 
