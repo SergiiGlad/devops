@@ -262,8 +262,33 @@ https://static-course-assets.s3.amazonaws.com/CyberEss/ru/course/files/5.1.2.4%2
 head -c 24 /dev/urandom | base64
 ```
 
+### Environment Variables
 
-
+Setting an Environment Variable
+```
+export JAVA_HOME=/opt/openjdk11
+```
+Unsetting an Environment Variable
+```
+unset JAVA_HOME
+```
+Listing All Set Environment Variables
+```
+set
+printenv
+env
+export
+export -p
+cat /proc/$pid/environ
+```
+Persisting Environment Variables for a User
+```
+vi ~/.bash_profile
+```
+Setting Permanent Global Environment Variables for All Users
+```
+sudo vi /etc/profile.d/http_proxy.sh
+```
 
 
 
