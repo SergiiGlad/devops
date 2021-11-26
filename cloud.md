@@ -1,6 +1,6 @@
 Cloud characteristics:
 
-* Multitenancy
-* Elasticity
-* Scalability
-* Portability
+Multitenancy
+Elasticity
+Scalability
+Portability
