@@ -29,9 +29,18 @@ Virtual infrastructure | Amazone Web Services Microsoft Azure VMware vCloud
 
 ## Infrastructure Automation
 
-Infrastructure AS Code
+Infrastructure AS Code.
 
-#### Golden Image to Foil Ball
+Infrastructure templates allow you to specify your project's infrastructure in a declarative and reusable way.
+
+Infrastructure as code enables you to describe, through code, the infrastructure that you need for your application.
+With infrastructure as code, you can maintain both your application code and everything you need to deploy your application in a central code repository. The advantages to infrastructure as code are:
+* Consistent configurations
+* Improved scalability
+* Faster deployments
+* Better traceability
+
+### Golden Image to Foil Ball
 
 **Provisioning** is the process of making a server ready for operation, including hardware, OS, system services, network connectivity.
 
