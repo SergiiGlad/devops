@@ -7,6 +7,11 @@ __DevOps__ is a software development practice which blends software development 
 
 (google)  __DevOps__ is an organizational and cultural movement that aims to increase software delivery velocity, improve service reliability, and build shared ownership among software stakeholders.
 
+(By Pavan Belagatti, Developer Advocate at Harness)
+DevOps is a hot topic that is quickly becoming the way of software development. It aims to promote development speed and reduce costs while increasing productivity and efficiency in your organization. DevOps is powered by automating your entire development, delivery, and operations processes. With continuous integration (CI) and continuous delivery (CD), you can do more with less, so it is beneficial to start implementing these concepts into your company as early as possible.
+What Is DevOps?
+DevOps is a cultural phenomenon used by companies that like to release quality software fast. It is done by automating the entire development and delivery process with the help of techniques and tools. However, it is not just a set of tools but a broader movement that focuses on how to improve the flow of software by streamlining the processes and mindset.
+The idea behind DevOps is to have an end-to-end automated pipeline from Dev (development) to Ops (operations). This way, the software moves quickly and can be tested as it moves through different phases of delivery and deployment. Continuous integration and continuous delivery become an essential part of the DevOps initiative and carry a lot of importance.
 
 #### Kaizen’s Guiding Principles
 
