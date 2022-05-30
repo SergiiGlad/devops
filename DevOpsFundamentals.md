@@ -91,7 +91,7 @@ With infrastructure as code, you can maintain both your application code and eve
 
 
 ## Reliability Engineering
-
+SRE is a discipline that applies aspects of software engineering to operations whose goals are to create ultra-scalable and highly reliable software systems.
  Book
 [Site Reliability Engineer](http://shop.oreilly.com/product/0636920041528.do)
 
