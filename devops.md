@@ -78,6 +78,9 @@ Continuous Integration ----> Continuous Delivery ----> Continuous Deployment
 **The microservice-based approach to architecting an application uses an API to expose discrete functions of the application; these functions are know as _microservices_**
 
 ### Container:
+
+__Containers are isolated user spaces for running application code.__
+
   * Containers may run on a bare-metal system or in a virtualized OS.
   * Containers (at least the Docker model) are "immutable", meaning that they cannot be changed. In fact, they are versioned, similar to source control.
   * An application in a container typically runs as **root**. However, it does not have unrestricted access to the entire system on which it runs.
