@@ -9,3 +9,6 @@ https://partner.cloudskillsboost.google/course_sessions/1123594/labs/266754
 * Authenticate as a service account in Cloud Shell
 * Install the nginx Web server
 * Web page that contains the cat image
+
+gcloud compute instances create gcelab2 --machine-type n1-standard-2 --zone us-central1-f
+gcloud compute ssh gcelab2 --zone us-central1-f
