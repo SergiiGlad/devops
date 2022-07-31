@@ -1,13 +1,22 @@
 # BASH Process Management Basics
 
+## [Processes](https://abarrak.gitbook.io/linux-sysops-handbook/#processes)
+
+The daemon __systemd__ process starts during boot time, and remains active until the shutdown. It's the parent process for all other process in the system.
+Each __process__ contains several main parts, such as: PID, state, virtual space address (memory), threads, network and file descriptors, scheduler information, and links. Processes are controlled and respond to signals. 
+
 ```
-ps aux | head
+ps auxc | head
 
 ps fax
 
 ps aux | grep <name>
 
 pgrep 
+
+psgrep -u abdullah -l
+
+pstree
 
 ```
 
@@ -32,15 +41,19 @@ SIGKILL(9) - force a process stop
 SIGHUP(1)
 
 ```
+kill -l
+kill -9 5921
+kill -SIGTERM 6152
+
 kill <PID> the same kill -15
-
 kill -9
-
 kill -l
 
 pkill firefox-bin
+killall -15 nginx
+pkill -U tester
 
-killall <MULTITHREDING PROCESS>
+killall <NAME MULTITHREDING PROCESS>
 
 ```
 
