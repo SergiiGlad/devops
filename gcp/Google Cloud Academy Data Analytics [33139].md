@@ -4,7 +4,7 @@
 
 Mark Armer
 
-Week 1:
+__Week 1:__    
 Google Cloud Big Data and Machine Learning Fundamentals
 https://partner.cloudskillsboost.google/course_templates/3
 
@@ -17,11 +17,11 @@ https://partner.cloudskillsboost.google/course_templates/54
 Insights from Data with BigQuery
 https://partner.cloudskillsboost.google/quests/123
 
-Week 2:
+__Week 2:__  
 Building Batch Data Pipelines on Google Cloud
 https://partner.cloudskillsboost.google/course_templates/53
 
-Week 3:
+__Week 3:__
 Building Resilient Streaming Analytics Systems on Google Cloud
 https://partner.cloudskillsboost.google/course_templates/52
 
