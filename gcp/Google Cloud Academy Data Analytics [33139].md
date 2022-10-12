@@ -21,7 +21,7 @@ __Week 2:__
 Building Batch Data Pipelines on Google Cloud
 https://partner.cloudskillsboost.google/course_templates/53
 
-__Week 3:__
+__Week 3:__  
 Building Resilient Streaming Analytics Systems on Google Cloud
 https://partner.cloudskillsboost.google/course_templates/52
 
