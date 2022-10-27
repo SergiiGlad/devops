@@ -25,3 +25,27 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html
 Creating a cluster with kubeadm
 Using kubeadm, you can create a minimum viable Kubernetes cluster that conforms to best practices. In fact, you can use kubeadm to set up a cluster that will pass the Kubernetes Conformance tests. ...
 
+Session 2 25/10/2022
+
+# API OVERVIEW
+
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.25/
+
+Open API standard https://swagger.io/
+
+Controller = Kubernetes Operator
+
+https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
+
+https://developer.ibm.com/articles/kubernetes-operators-patterns-and-best-practices/?utm_medium=Email&utm_source=Newsletter&utm_content=DEVWW&utm_term=10013593&utm_id=n05&spMailingID=47371808&spUserID=NzMwNjQ3NDUzODY3S0&spJobID=2321613592&spReportId=MjMyMTYxMzU5MgS2
+
+
+```sh
+kubectl api-resources
+```
+
+1. v1
+2. v1beta1
+
+1. with namespace
+2. clusterscope
