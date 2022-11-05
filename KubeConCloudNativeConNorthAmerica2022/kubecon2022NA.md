@@ -8,7 +8,7 @@ https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/
 Below are events with the presentation file
 
 n/n | __Event__ | __Type__ | __Level__ | __Presentation file__
---- | --- | --- | --- | ---
+--- | --- | --- | --- | :--
 1 | [What Container Runtime Do I Need? - Abubakar Siddiq Ango, GitLab](https://kccncna2022.sched.com/event/182FA/what-container-runtime-do-i-need-abubakar-siddiq-ango-gitlab) | 101 Track | Beginner | [KubeCon + CloudNativeCon NA 2022 PowerPoint.pdf](https://static.sched.com/hosted_files/kccncna2022/30/KubeCon%20%2B%20CloudNativeCon%20NA%202022%20PowerPoint.pdf)
 2 | [Tutorial: Set Up Your Shell For Kubernetes Productivity And Be Efficient Quickly - Sebastien “Prune” Thomas, Wunderkind & Archy Ayrat Khayretdinov, Google](https://kccncna2022.sched.com/event/182F7/tutorial-set-up-your-shell-for-kubernetes-productivity-and-be-efficient-quickly-sebastien-prune-thomas-wunderkind-archy-ayrat-khayretdinov-google) | 101 Track | Beginner | [K8s User Setup.pdf](https://static.sched.com/hosted_files/kccncna2022/01/K8s%20User%20Setup.pdf)
 3 | [How CNET (And Friends) Use the CNCF Landscape To Run High Traffic, Dynamic, Scalable, And Cost-Effective Websites. - Corey McGalliard, Red Ventures](https://kccncna2022.sched.com/event/182F4/how-cnet-and-friends-use-the-cncf-landscape-to-run-high-traffic-dynamic-scalable-and-cost-effective-websites-corey-mcgalliard-red-ventures) | 101 Track | Beginner | [How CNET (And Friends) Use the CNCF Landscape To Run High Traffic, Dynamic, Scaleable, And Cost-Effective Websites.pdf](https://static.sched.com/hosted_files/kccncna2022/57/How%20CNET%20%28And%20Friends%29%20Use%20the%20CNCF%20Landscape%20To%20Run%20High%20Traffic%2C%20Dynamic%2C%20Scaleable%2C%20And%20Cost-Effective%20Websites.pdf)
