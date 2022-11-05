@@ -1,0 +1,8 @@
+apiVersion: "stable.example.com/v1"
+kind: CronTab
+metadata:
+  name: crontab1
+  namespace: deepdive
+spec:
+  cronSpec: "1 * * * *"
+  image: willfarrell/crontab
