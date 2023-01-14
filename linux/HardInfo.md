@@ -17,8 +17,12 @@ The long full forms but hard to read output
 ```hwinfo``` or ```lshw```
 
 ## CPU details 
-```lscpu``` 
+```
+lscpu
+``` 
+
 or 
+
 ```
 # lshw -C cpu
 # lshw -C cpu | grep -i mhz
