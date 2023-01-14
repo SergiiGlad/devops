@@ -16,18 +16,13 @@ The long full forms but hard to read output
 
 ```hwinfo``` or ```lshw```
 
-## CPU details
-
-```
-$ lscpu
-```
-or
+## CPU details ```lscpu``` or 
 ```
 # lshw -C cpu
-
 # lshw -C cpu | grep -i mhz
 
 ```
+To verify the number of processors ``` nproc```
 
 ## Memory
 
