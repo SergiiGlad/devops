@@ -3,7 +3,7 @@ _DevOps is the union of people, processes and products to enable continuous deli
 
 ## What is DevOps? (IBM Developer)
 
-* DevOps is a software development approahc for Development and Operations teams (Dev and Ops) which allows the teams to deliver innovative new applications faster and at a loswer cost with just the right features;
+* DevOps is a software development approach for Development and Operations teams (Dev and Ops) which allows the teams to deliver innovative new applications faster and at a loswer cost with just the right features;
 
 * It is a methodology that promotes colllaboration to build, test, and deploy products rapidly with an emphasis on quality;
 
@@ -78,8 +78,31 @@ Continuous Integration ----> Continuous Delivery ----> Continuous Deployment
 **The microservice-based approach to architecting an application uses an API to expose discrete functions of the application; these functions are know as _microservices_**
 
 ### Container:
+
+__Containers are isolated user spaces for running application code.__
+
   * Containers may run on a bare-metal system or in a virtualized OS.
   * Containers (at least the Docker model) are "immutable", meaning that they cannot be changed. In fact, they are versioned, similar to source control.
   * An application in a container typically runs as **root**. However, it does not have unrestricted access to the entire system on which it runs.
+
+
+An application and it's dependencies are called an __image__.
+A container is simply a running instance of an image.
+By building software into container images, developers can easily package and ship an application without worrying about the system it will be running on.
+You need software to build container images and to run them.
+__Docker__ is one tool that does both.
+Docker is an open source technology that allows you to create and run applications and containers.
+But it doesn't offer a way to orchestrate those applications at scale like Kubernetes does.
+In this course, we'll use Google's Cloud Build to create Docker formatted container images.
+Containers are not an intrinsic primitive feature of Linux.
+Instead, their power to isolate workloads is derived from the composition of several technologies.
+One foundation is the __Linux process__.
+Each Linux process has its own virtual memory address space separate from all others.
+In Linux processes are rapidly created and destroyed.
+Containers use Linux __namespaces__ to control what an application can see.
+Process Id numbers, directory trees, IP addresses, and more.
+By the way, Linux namespaces are not the same thing as Kubernetes namespaces, which you learn more about later on in this course.
+Containers used Linux __cgroups__ to control what an application can use, its maximum consumption of CPU time, memory, IO bandwidth, and other resources.
+Finally, containers use __union file systems__ to efficiently encapsulate applications and their dependencies into a set of clean minimal layers.
 
 

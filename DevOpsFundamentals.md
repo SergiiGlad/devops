@@ -7,6 +7,11 @@ __DevOps__ is a software development practice which blends software development 
 
 (google)  __DevOps__ is an organizational and cultural movement that aims to increase software delivery velocity, improve service reliability, and build shared ownership among software stakeholders.
 
+(By Pavan Belagatti, Developer Advocate at Harness)
+DevOps is a hot topic that is quickly becoming the way of software development. It aims to promote development speed and reduce costs while increasing productivity and efficiency in your organization. DevOps is powered by automating your entire development, delivery, and operations processes. With continuous integration (CI) and continuous delivery (CD), you can do more with less, so it is beneficial to start implementing these concepts into your company as early as possible.
+What Is DevOps?
+DevOps is a cultural phenomenon used by companies that like to release quality software fast. It is done by automating the entire development and delivery process with the help of techniques and tools. However, it is not just a set of tools but a broader movement that focuses on how to improve the flow of software by streamlining the processes and mindset.
+The idea behind DevOps is to have an end-to-end automated pipeline from Dev (development) to Ops (operations). This way, the software moves quickly and can be tested as it moves through different phases of delivery and deployment. Continuous integration and continuous delivery become an essential part of the DevOps initiative and carry a lot of importance.
 
 #### Kaizen’s Guiding Principles
 
@@ -29,9 +34,18 @@ Virtual infrastructure | Amazone Web Services Microsoft Azure VMware vCloud
 
 ## Infrastructure Automation
 
-Infrastructure AS Code
+Infrastructure AS Code.
 
-#### Golden Image to Foil Ball
+Infrastructure templates allow you to specify your project's infrastructure in a declarative and reusable way.
+
+Infrastructure as code enables you to describe, through code, the infrastructure that you need for your application.
+With infrastructure as code, you can maintain both your application code and everything you need to deploy your application in a central code repository. The advantages to infrastructure as code are:
+* Consistent configurations
+* Improved scalability
+* Faster deployments
+* Better traceability
+
+### Golden Image to Foil Ball
 
 **Provisioning** is the process of making a server ready for operation, including hardware, OS, system services, network connectivity.
 
@@ -77,7 +91,7 @@ Infrastructure AS Code
 
 
 ## Reliability Engineering
-
+SRE is a discipline that applies aspects of software engineering to operations whose goals are to create ultra-scalable and highly reliable software systems.
  Book
 [Site Reliability Engineer](http://shop.oreilly.com/product/0636920041528.do)
 

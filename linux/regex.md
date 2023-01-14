@@ -56,8 +56,8 @@ Count match word **-c** | `$ ifconfig \| grep -c 192.168`
 Number lines **-n** | `$ ifconfig \| grep -n 192.168`
 Find recursive to throuth all files and folders | $ grep -r mysql *
 Find into zip files | $ zgrep -i error /var/log/syslog.2.gz
-Find by regex ```Egrep``` | grep -E
-Find by template | fgrep -f template.txt
+Find by regex ```Egrep``` | grep -E '^[fj]' /etc/passwd
+Find by template | fgrep -f template.txt , grep -F 'josevnz' /etc/passwd
 Looking last three lines | tail -n 3 file.log
 word count | `wc` can count the number of bytes, characters, words, or lines
 
