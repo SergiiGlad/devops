@@ -1,3 +1,9 @@
+Docker Internals
+
+tyvik.ru
+
+https://www.youtube.com/watch?v=u3KA0zAXgOI&t=713s
+
 ```
 apt install cgroup-tools
 ```
@@ -28,4 +34,6 @@ cat cpu,cpuacct/docker/id/cpu.cfs_quota_us
 docker inspect stress ( NanoCpus )
 
 docker kill stress
+
+docker run -ti --cap-add=all tyvik/stress bash
 
