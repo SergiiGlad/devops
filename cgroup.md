@@ -15,3 +15,15 @@ systemd-cgls
 cat cpu/devops/tasks
 cat /proc/26932/cgroup
 ```
+
+
+Docker
+```
+docker  run --cpus="2" --name=stress --rm tyvik/stress stress -c 4
+docker update --cpus=0.5 stress
+docker update --cpus=4 stress
+
+cat cpu,cpuacct/docker/id/cpu.cfs_quota_us
+
+
+
