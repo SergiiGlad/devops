@@ -25,5 +25,7 @@ docker update --cpus=4 stress
 
 cat cpu,cpuacct/docker/id/cpu.cfs_quota_us
 
+docker inspect stress ( NanoCpus )
 
+docker kill stress
 
