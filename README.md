@@ -4,4 +4,7 @@
 * Cloud platforms
 * Container orchestration
 * Architecture
-* Application technologies  
+* Application technologies
+
+Platform tooling landscape
+![Platform tooling landscape](2025-03-13.jpg)
