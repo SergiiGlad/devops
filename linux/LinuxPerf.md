@@ -1,11 +1,11 @@
 
 ## Linux system untils for monitoring
 
-#### Special soft for monitoring system are Zabbix and Prometheus 
+#### Special soft for monitoring system are Zabbix and Prometheus
 (Graphite/Icinga/Zabbix/Prometheus/Netdata have nice grafics )
 ##
 ###### $ uptime { 17:09:42 up 2 days,  5:23,  4 users,  load average: 0.77, 1.21, 1.14 }
-###### $ w 
+###### $ w
 ###### $ cat /proc/uptime { 192411.43 130228.29 }
 ###### $ cat /proc/loadavg { 0.60 0.86 1.00 1/824 15317 }
 ##
@@ -14,10 +14,10 @@
 ###### $ htop
 ###### $ pidof java
 ###### $ pstree 1 { pstree $(pidof dockerd) }
-###### $ sar -r 
+###### $ sar -r
 ###### $ time python ‐c "import time; time.sleep(1)" { time on run program }
 ###### $ mpstat -P ALL 1 { on each core }
-###### # fuser /var/run/docker.sock { to get number processes which use file } 
+###### # fuser /var/run/docker.sock { to get number processes which use file }
 ##
 ###### $ cat /proc/meminfo
 ###### $ free -ht { human readable , total sum with swap }
@@ -40,6 +40,7 @@
 ###### $ sudo parted /dev/sda
 ###### $ df -h
 ###### $ du -sh /home/user { size of folder /home/user }
+###### $ du -hs $(ls -A) { This command shows the space each file uses within each sub-directory}
 
 ##
 ###### $ iostat { read/write disk operation }
@@ -57,8 +58,8 @@
 ###### $ netstat -nr
 ###### `# cat /proc/net/fib_trie`  { show ip address }
 ###### `# cat /proc/net/route` { show ip table }
-###### `# lsof -i` { show all TCP/IP socket } 
-CHECK FOR OPENS PORT 
+###### `# lsof -i` { show all TCP/IP socket }
+CHECK FOR OPENS PORT
 echo > /dev/tcp/<server ip>/<port>
 
 ```
