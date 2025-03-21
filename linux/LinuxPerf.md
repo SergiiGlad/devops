@@ -65,6 +65,7 @@ echo > /dev/tcp/<server ip>/<port>
 ```
 echo > /dev/tcp/localhost/22
 ```
+nc -zv localhost 22
 ---
 ###### $ sudo netstat -tnlp { list ports }
 ###### $ sudo lsof | grep TCP { list of open files,  TCP connection info }
