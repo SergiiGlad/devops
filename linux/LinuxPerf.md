@@ -88,7 +88,42 @@ nc -zv localhost 22
 ###### $ cat /proc/cpuinfo
 ###### $ lscpu
 ###### $ nproc
-###### $ dmidecode
+###### $ dmidecode -t 4
+###### $ pidstat -C "podtgres" -u -G "postgres
+###### # lshw -short -C memory
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"
 
 ## Linux Performance Analysis in 60,000 Milliseconds
 
