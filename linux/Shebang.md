@@ -5,18 +5,18 @@ If __bash__ is invoked with the name __sh__ as an interactive login shell
 it first attempts to read and execute commands from _/etc/profile_ and _~/.profile_ , in that order.
 
 __Bash__ as an interactive login shell, or as a non-interactive shell with the --login option:
- * /etc/profile  
- *  ~/.bash_profile 
+ * /etc/profile
+ *  ~/.bash_profile
  * ~/.bash_login
  * ~/.profile
   in  that  order if the files exists
 
-When an interactive shell that is not a login shell is started, 
-bash reads and executes commands from __~/.bashrc,__ if that file exists. 
+When an interactive shell that is not a login shell is started,
+bash reads and executes commands from __~/.bashrc,__ if that file exists.
 
-When a login shell exits, bash reads and executes commands from the files 
- * ~/.bash_logout 
- * /etc/bash.bash_logout 
+When a login shell exits, bash reads and executes commands from the files
+ * ~/.bash_logout
+ * /etc/bash.bash_logout
 if the files exists.
 
 ## FILES
@@ -59,7 +59,7 @@ to contain only files supplied and maintained by the Linux distributor.
 echo "Would you like to continue? [yes\no]"; read CON; if [ ${CON} != "yes" ]; then echo "Canceled"; else echo "Runnnig..."; fi
 
 ##
-#!/bin/bash 
+#!/bin/bash
 
 number=
 if [ $number=1 ]; then echo "Number is equal to 1 "  # [ =1 ]
@@ -69,7 +69,11 @@ if [ "$number"=1 ]; then echo "Number is equal to 1" # [ ""=1 ]
 ##
 
 [[ -d $myfolder ]] && cd $myfolder && rm * # prevent remove data without cd command
-#!/bin/bash -x 
+#!/bin/bash -x
 -x debug mode
- 
- 
+
+## Finds bugs in your shell scripts
+
+shellcheck.net
+
+
