@@ -1,4 +1,7 @@
-  You are right to question it, and the key is understanding that load average is not a percentage.
+  top shows you three numbers for the load average:
+  load average: 1.15, 0.95, 0.75
+  
+  the key is understanding that load average is not a percentage.
 
   The "Bridge" Analogy
 
