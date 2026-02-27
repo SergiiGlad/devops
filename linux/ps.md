@@ -63,3 +63,18 @@ State | Meaning
 --- | ---
 Running (R) | 
 Stopped (Sq)
+
+Why is this running?
+
+https://github.com/pranshuparmar/witr
+
+Interactive Mode (TUI)
+Running witr without any arguments or with the -i flag launches the Interactive Mode (TUI). This provides a real-time, terminal-based dashboard for exploring processes and ports.
+
+Key Features:
+* Live Process List: Real-time view of all running processes with sorting and filtering.
+* Port View: Explore open ports and immediately see which processes are holding them.
+* Process Details: Deep-dive into a specific process to see its full ancestry tree, child processes, environment variables, working directory, and more.
+* Process Actions: Send signals (Kill, Terminate, Pause, Resume) or Renice processes directly from the UI.
+* Mouse Support: Navigate, sort columns, and click rows using your mouse.
+
