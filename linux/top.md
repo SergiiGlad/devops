@@ -1,7 +1,10 @@
 #### Linux **top** command
 
+https://man7.org/linux/man-pages/man1/top.1.html
+
+
 Top:
-![alt text](https://github.com/SergiiGlad/devops/blob/master/top.png "Top")
+![alt text](https://github.com/SergiiGlad/devops/blob/master/linux/top.png "Top")
 
 ###### $ top -v { version 3.3.10}
 
@@ -56,5 +59,36 @@ On a multi-core system you should first divide the load average with the number 
  * TIME+ - total CPU time used, precise to the hundredths of a second
  * COMMAND - the name of the processes
 
- 
+Using **top** command
+
+https://developer.ibm.com/tutorials/l-lpic1-103-5/
+
+The top command has a number of subcommands, of which the most useful to start with are:
+
+h: Gets you help
+q: Quits the top command
+f: Lets you add or remove fields from the display
+F: Selects fields to sort on
+Shift V: forest view. you can see is relationship between a parent process and a child process
+k: PID to signal/kill
+W: Write-the-Configuration-File
+
+[Understanding Linux System Performance | The Top Command by Akamai](https://www.youtube.com/watch?v=3r_PBLaZoFQ
+)Developer / Learn Linux TV (22:52)
+
+```bash
+top -1 # show cpu usage per core
+```
+
+Alternatives:
+* atop
+* htop
+* glances
+* nmon
+* dstat
+* sar
+
+
+
+
 

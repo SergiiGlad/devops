@@ -1,5 +1,12 @@
   top shows you three numbers for the load average:
   load average: 1.15, 0.95, 0.75
+
+  ```bash
+  uptime
+  cat /proc/loadavg
+  top
+  htop
+  ```
   
   the key is understanding that load average is not a percentage.
 
