@@ -19,25 +19,27 @@ Top:
 
 ##### Tasks
 
- * total - value is simply the total number of processes
- * running - Runnable(R) state executing on the CPU
- * sleeping - Interruptible (S) Uninterruptible sleep (D)
- * stopped - Stopped (T) these processes have been stoped by a job control signal
- * zombie - Zombie (Z) such terminated processes whose data structures are still around are called zombies 
-
+| State | Description |
+| :--- | :--- |
+| **total** | Total number of processes in the system. |
+| **running** | Runnable (R) state; processes currently executing on the CPU. |
+| **sleeping** | Interruptible sleep (S) or Uninterruptible sleep (D). |
+| **stopped** | Stopped (T); processes halted by a job control signal. |
+| **zombie** | Zombie (Z); terminated processes with remaining data structures. |
 
 ##### CPU Usage
  
 %Cpu(s):
-
- * us - is the time the CPU spends executing processes in userspace
- * sy - kernelspace processes
- * ni - a manually set "nice" and gets a low priority
- * id - idle
- * wa - waiting for I/O to complete
- * hi - hardware interrupts
- * si - software interrupts
- * st - steal time , the CPU is busy on some other virtual machine (VM)
+| Field | Description |
+| :--- | :--- |
+| **us** | Time spent executing processes in userspace. |
+| **sy** | Time spent executing kernelspace processes. |
+| **ni** | Time spent on "nice" processes with manually set low priority. |
+| **id** | Time spent in the idle state. |
+| **wa** | Time spent waiting for I/O to complete. |
+| **hi** | Time spent servicing hardware interrupts. |
+| **si** | Time spent servicing software interrupts. |
+| **st** | "Steal time": CPU time stolen by the hypervisor for other VMs. |
 
 ##### Load average
 
@@ -87,8 +89,3 @@ Alternatives:
 * nmon
 * dstat
 * sar
-
-
-
-
-
